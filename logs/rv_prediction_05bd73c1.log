@@ -1,0 +1,16 @@
+2025-06-23 16:36:23,383 - INFO - Starting prediction process
+2025-06-23 16:36:23,384 - INFO - Loading data from data\SPY.csv
+2025-06-23 16:36:23,796 - INFO - Calculating realized volatility and features
+2025-06-23 16:36:24,323 - INFO - Prepared 745 samples for prediction
+2025-06-23 16:36:24,323 - INFO - Loading trained models
+2025-06-23 16:36:24,324 - INFO - HAR model loaded
+2025-06-23 16:36:24,345 - INFO - Random Forest model loaded
+2025-06-23 16:36:24,349 - INFO - XGBoost model loaded
+2025-06-23 16:36:24,460 - WARNING - Failed to load LSTM model: Could not locate function 'mse'. Make sure custom classes are decorated with `@keras.saving.register_keras_serializable()`. Full object config: {'module': 'keras.metrics', 'class_name': 'function', 'config': 'mse', 'registered_name': 'mse'}
+2025-06-23 16:36:24,461 - INFO - Making predictions
+2025-06-23 16:36:24,463 - INFO - HAR prediction: 0.000067
+2025-06-23 16:36:24,468 - INFO - Random Forest prediction: 0.000034
+2025-06-23 16:36:24,470 - INFO - XGBoost prediction: 0.000072
+2025-06-23 16:36:24,470 - INFO - Ensemble prediction: 0.000058
+2025-06-23 16:36:24,475 - INFO - Predictions saved to forecasts\predictions_20250623_163624.json and forecasts\predictions_20250623_163624.csv
+2025-06-23 16:36:24,476 - ERROR - Prediction process failed: [Errno 22] Invalid argument

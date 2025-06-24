@@ -1,0 +1,19 @@
+2025-06-24 15:46:35,455 - RVForecasting - INFO - Logging initialized. Log file: logs\rv_forecasting_20250624_154635.log
+2025-06-24 15:46:35,456 - RVForecasting - INFO - Using device: cpu
+2025-06-24 15:46:35,456 - RVForecasting - INFO - Starting training pipeline...
+2025-06-24 15:46:35,456 - RVForecasting - INFO - === STARTING RV FORECASTING PIPELINE ===
+2025-06-24 15:46:35,456 - RVForecasting - INFO - Loading data from: data\SPY.csv
+2025-06-24 15:46:35,775 - RVForecasting - INFO - Loaded 297592 rows
+2025-06-24 15:46:36,063 - RVForecasting - INFO - Data spans from 2022-05-31 13:30:00 to 2025-06-20 19:59:00
+2025-06-24 15:46:36,084 - RVForecasting - INFO - Number of trading days: 767
+2025-06-24 15:46:36,085 - RVForecasting - INFO - Computing log returns and RV targets...
+2025-06-24 15:46:37,858 - RVForecasting - INFO - Removed 1 rows with NaN log returns
+2025-06-24 15:46:37,860 - RVForecasting - INFO - Engineering features...
+2025-06-24 15:46:44,863 - RVForecasting - INFO - Generated 25 features
+2025-06-24 15:46:44,863 - RVForecasting - INFO - Preparing sequences for training...
+2025-06-24 15:46:45,022 - RVForecasting - INFO - Using 297201 samples with valid targets
+2025-06-24 15:48:19,450 - RVForecasting - INFO - Created 296811 sequences of shape (296811, 390, 19)
+2025-06-24 15:48:19,461 - RVForecasting - INFO - Train: 213703, Val: 53426, Test: 29682
+2025-06-24 15:48:19,473 - RVForecasting - INFO - Training TRANSFORMER model...
+2025-06-24 15:48:26,302 - RVForecasting - INFO - Starting training for transformer...
+2025-06-24 15:48:26,302 - RVForecasting - INFO - Epoch 1/100

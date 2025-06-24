@@ -1,0 +1,2 @@
+2025-06-22 19:34:09,196 - INFO - Loading OHLCV data from ..\data\SPY.csv
+2025-06-22 19:34:09,526 - ERROR - Missing required columns: ['timestamp']

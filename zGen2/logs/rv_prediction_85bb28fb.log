@@ -1,0 +1,2 @@
+2025-06-22 19:28:20,732 - INFO - Loading OHLCV data from sample_ohlcv.csv
+2025-06-22 19:28:20,767 - ERROR - OHLC inconsistencies found in 11631 rows

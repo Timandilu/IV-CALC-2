@@ -1,0 +1,4 @@
+2025-06-24 19:46:53,022 - INFO - Starting prediction process
+2025-06-24 19:46:53,022 - INFO - Loading data from sliced_data\2022-06-02.csv
+2025-06-24 19:46:53,035 - INFO - Calculating realized volatility and features
+2025-06-24 19:46:53,045 - ERROR - Prediction process failed: No valid data points after feature engineering

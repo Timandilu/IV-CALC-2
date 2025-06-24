@@ -1,0 +1,42 @@
+{
+  "har_lags": [
+    1,
+    5,
+    22
+  ],
+  "train_ratio": 0.7,
+  "sequence_length": 300,
+  "ensemble_weights": {
+    "har": 0.3,
+    "rf": 0.25,
+    "xgb": 0.25,
+    "lstm": 0.2
+  },
+  "random_forest": {
+    "n_estimators": 100,
+    "max_depth": 20,
+    "min_samples_split": 5,
+    "random_state": 42
+  },
+  "xgboost": {
+    "n_estimators": 100,
+    "max_depth": 20,
+    "learning_rate": 0.1,
+    "random_state": 42
+  },
+  "lstm": {
+    "epochs": 100,
+    "batch_size": 64,
+    "validation_split": 0.2,
+    "early_stopping_patience": 10
+  },
+  "evaluation": {
+    "test_size": 0.3,
+    "cv_folds": 5,
+    "statistical_tests": [
+      "DM",
+      "CW",
+      "MCS"
+    ]
+  }
+}

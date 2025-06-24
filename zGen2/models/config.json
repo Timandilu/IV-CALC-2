@@ -1,0 +1,15 @@
+{
+  "har_lags": [
+    1,
+    5,
+    22
+  ],
+  "train_ratio": 0.7,
+  "sequence_length": 30,
+  "ensemble_weights": {
+    "har": 0.3,
+    "rf": 0.25,
+    "xgb": 0.25,
+    "lstm": 0.2
+  }
+}

@@ -1,0 +1,2 @@
+2025-06-22 19:33:38,525 - INFO - Loading OHLCV data from data\\SPY.csv
+2025-06-22 19:33:38,527 - ERROR - Failed to load data: [Errno 2] No such file or directory: 'data\\\\SPY.csv'

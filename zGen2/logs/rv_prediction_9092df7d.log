@@ -1,0 +1,16 @@
+2025-06-22 20:24:48,556 - INFO - Loading OHLCV data from ..\data\SPY.csv
+2025-06-22 20:24:48,976 - INFO - Loaded 297207 rows of OHLCV data
+2025-06-22 20:24:48,976 - INFO - Calculating realized volatility measures
+2025-06-22 20:24:49,508 - INFO - Prepared 744 samples with 6 features
+2025-06-22 20:24:49,508 - INFO - Training models on 520 samples
+2025-06-22 20:24:49,508 - INFO - Training HAR-RV model
+2025-06-22 20:24:49,511 - INFO - Training Random Forest model
+2025-06-22 20:24:49,765 - INFO - Training XGBoost model
+2025-06-22 20:24:49,786 - INFO - Training LSTM model
+2025-06-22 20:24:57,575 - INFO - Model training completed
+2025-06-22 20:24:57,588 - WARNING - LSTM prediction failed
+2025-06-22 20:24:57,590 - INFO - HAR - MAE: 0.000139, RMSE: 0.000381, R²: 0.1823
+2025-06-22 20:24:57,593 - INFO - RF - MAE: 0.000068, RMSE: 0.000282, R²: 0.5524
+2025-06-22 20:24:57,596 - INFO - XGB - MAE: 0.000104, RMSE: 0.000363, R²: 0.2550
+2025-06-22 20:24:57,647 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-06-22 20:24:57,680 - INFO - Models saved to models
