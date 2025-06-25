@@ -148,7 +148,6 @@ class CommandRunner:
         for var_name, pattern in patterns.items():
             matches = re.findall(pattern, text, re.MULTILINE | re.IGNORECASE)
             if matches:
-                print(len(matches))
                 # If multiple matches, take the last one (often the final result)
                 value = matches[-1]
                 # Try to convert to number if possible
@@ -262,9 +261,15 @@ def main():
         extract_patterns={"annualized_volatility": r"Annualized Volatility\s*\(%\):\s*([\d\.]+)"},
        description="zGen3"
     )
-    command3 = "python zGen4\\rv_forecast.py --mode forecast --data_path data/"
-    result3 = runner.run_command(
-        command3, 
+    command4 = "python zGen4\\rv_forecast.py --mode forecast --data_path data/"
+    result4 = runner.run_command(
+        command4, 
+        extract_patterns={"annualized_volatility": r"Annualized Volatility \(%\)[:\s]+([0-9.]+)"},
+       description="zGen4"
+    )
+    command5 = "python zGen3\\NEXT.py predict --csv-path data\\SPY.csv --model transformer"
+    result5 = runner.run_command(
+        command5, 
         extract_patterns={"annualized_volatility": r"Annualized Volatility \(%\)[:\s]+([0-9.]+)"},
        description="zGen4"
     )

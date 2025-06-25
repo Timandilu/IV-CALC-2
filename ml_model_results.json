@@ -1,24 +1,36 @@
 [
   {
-    "timestamp": "2025-06-24T19:58:09.184928",
-    "command": "python zGen1\\RUNforecast.py --data sliced_data\\2022-06-08.csv",
+    "timestamp": "2025-06-25T17:17:14.415673",
+    "command": "python zGen1\\RUNforecast.py --data sliced_data\\2022-06-03.csv",
     "description": "zGen1",
     "status": "failed",
     "stdout": "",
-    "stderr": "2025-06-24 19:58:14,781 - Deepalgo - INFO - Loading data from sliced_data\\2022-06-08.csv\nC:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\zGen1\\Deepalgo.py:124: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.\n  df = df.fillna(method='ffill', limit=5)\n2025-06-24 19:58:14,793 - Deepalgo - INFO - Filtered to market hours 13:30-20:00: 2730 observations\n2025-06-24 19:58:14,793 - Deepalgo - INFO - Data loaded and cleaned: 2730 observations\n2025-06-24 19:58:14,794 - Deepalgo - INFO - Computed 2729 log returns\n2025-06-24 19:58:14,797 - Deepalgo - INFO - Computed naive RV for 7 periods\nTraceback (most recent call last):\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\zGen1\\RUNforecast.py\", line 17, in <module>\n    features_df = ForecastingModels.prepare_har_features(rv_series)\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\zGen1\\Deepalgo.py\", line 319, in prepare_har_features\n    raise ValueError(f\"Insufficient data: {len(rv_series)} observations. Need at least 25.\")\nValueError: Insufficient data: 7 observations. Need at least 25.\n",
+    "stderr": "2025-06-25 17:17:19,338 - Deepalgo - INFO - Loading data from sliced_data\\2022-06-03.csv\nC:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\IV-CALC-2\\zGen1\\Deepalgo.py:124: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.\n  df = df.fillna(method='ffill', limit=5)\n2025-06-25 17:17:19,359 - Deepalgo - INFO - Filtered to market hours 13:30-20:00: 1560 observations\n2025-06-25 17:17:19,359 - Deepalgo - INFO - Data loaded and cleaned: 1560 observations\n2025-06-25 17:17:19,362 - Deepalgo - INFO - Computed 1559 log returns\n2025-06-25 17:17:19,373 - Deepalgo - INFO - Computed naive RV for 4 periods\nTraceback (most recent call last):\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\IV-CALC-2\\zGen1\\RUNforecast.py\", line 17, in <module>\n    features_df = ForecastingModels.prepare_har_features(rv_series)\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\IV-CALC-2\\zGen1\\Deepalgo.py\", line 319, in prepare_har_features\n    raise ValueError(f\"Insufficient data: {len(rv_series)} observations. Need at least 25.\")\nValueError: Insufficient data: 4 observations. Need at least 25.\n",
     "return_code": 1,
     "extracted_variables": {},
-    "execution_time": 5.941226,
+    "execution_time": 5.320614,
     "applog_entries": []
   },
   {
-    "timestamp": "2025-06-24T19:58:15.127329",
+    "timestamp": "2025-06-25T17:17:58.250562",
+    "command": "python zGen1\\RUNforecast.py --data sliced_data\\2022-05-31.csv",
+    "description": "zGen1",
+    "status": "failed",
+    "stdout": "",
+    "stderr": "2025-06-25 17:18:02,188 - Deepalgo - INFO - Loading data from sliced_data\\2022-05-31.csv\nC:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\IV-CALC-2\\zGen1\\Deepalgo.py:124: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.\n  df = df.fillna(method='ffill', limit=5)\n2025-06-25 17:18:02,196 - Deepalgo - INFO - Filtered to market hours 13:30-20:00: 390 observations\n2025-06-25 17:18:02,196 - Deepalgo - INFO - Data loaded and cleaned: 390 observations\n2025-06-25 17:18:02,197 - Deepalgo - INFO - Computed 389 log returns\n2025-06-25 17:18:02,198 - Deepalgo - INFO - Computed naive RV for 1 periods\nTraceback (most recent call last):\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\IV-CALC-2\\zGen1\\RUNforecast.py\", line 17, in <module>\n    features_df = ForecastingModels.prepare_har_features(rv_series)\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\IV-CALC-2\\zGen1\\Deepalgo.py\", line 319, in prepare_har_features\n    raise ValueError(f\"Insufficient data: {len(rv_series)} observations. Need at least 25.\")\nValueError: Insufficient data: 1 observations. Need at least 25.\n",
+    "return_code": 1,
+    "extracted_variables": {},
+    "execution_time": 4.194813,
+    "applog_entries": []
+  },
+  {
+    "timestamp": "2025-06-25T17:18:02.449561",
     "command": [
       "zGen2\\.venv\\Scripts\\python.exe",
       "zGen2\\main.py",
       "predict",
       "--data",
-      "sliced_data\\2022-06-08.csv",
+      "sliced_data\\2022-05-31.csv",
       "--model",
       "models\\",
       "--output",
@@ -26,27 +38,69 @@
     ],
     "description": "zGen2",
     "status": "failed",
-    "stdout": "2025-06-24 19:58:20,685 - INFO - Starting prediction process\n2025-06-24 19:58:20,686 - INFO - Loading data from sliced_data\\2022-06-08.csv\n2025-06-24 19:58:20,705 - INFO - Calculating realized volatility and features\n2025-06-24 19:58:20,723 - ERROR - Prediction process failed: No valid data points after feature engineering\nPrediction failed: No valid data points after feature engineering\n",
-    "stderr": "2025-06-24 19:58:17.277850: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.\n2025-06-24 19:58:18.449588: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.\n",
+    "stdout": "2025-06-25 17:18:07,407 - INFO - Starting prediction process\n2025-06-25 17:18:07,407 - INFO - Loading data from sliced_data\\2022-05-31.csv\n2025-06-25 17:18:07,417 - INFO - Calculating realized volatility and features\n2025-06-25 17:18:07,424 - ERROR - Prediction process failed: No valid data points after feature engineering\nPrediction failed: No valid data points after feature engineering\n",
+    "stderr": "2025-06-25 17:18:04.806664: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.\n2025-06-25 17:18:06.026842: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.\n",
     "return_code": 1,
     "extracted_variables": {},
-    "execution_time": 6.337024,
+    "execution_time": 5.496388,
     "applog_entries": []
   },
   {
-    "timestamp": "2025-06-24T19:58:21.465322",
-    "command": "python zGen3\\NEXT.py predict --csv-path sliced_data\\2022-06-08.csv --model lstm",
+    "timestamp": "2025-06-25T17:18:07.947067",
+    "command": "python zGen3\\NEXT.py predict --csv-path sliced_data\\2022-05-31.csv --model lstm",
     "description": "zGen3",
+    "status": "failed",
+    "stdout": "2025-06-25 17:18:16,348 - RVForecasting - INFO - Logging initialized. Log file: logs\\rv_forecasting_20250625_171816.log\n2025-06-25 17:18:16,348 - RVForecasting - INFO - Using device: cpu\n2025-06-25 17:18:16,348 - RVForecasting - INFO - Starting prediction pipeline...\n2025-06-25 17:18:16,348 - RVForecasting - INFO - Found pre-trained model: models\\best_lstm_model.pt\n2025-06-25 17:18:16,358 - RVForecasting - INFO - Loading data from: sliced_data\\2022-05-31.csv\n2025-06-25 17:18:16,361 - RVForecasting - INFO - Loaded 390 rows\n2025-06-25 17:18:16,371 - RVForecasting - INFO - Data spans from 2022-05-31 13:30:00 to 2022-05-31 19:55:00\n2025-06-25 17:18:16,371 - RVForecasting - INFO - Number of trading days: 1\n2025-06-25 17:18:16,371 - RVForecasting - INFO - Computing log returns and RV targets...\n2025-06-25 17:18:16,374 - RVForecasting - INFO - Removed 1 rows with NaN log returns\n2025-06-25 17:18:16,374 - RVForecasting - INFO - Engineering features...\nError: Bin edges must be unique: Index([0.007880387668816916, 0.009954115802916608, 0.009954115802916608,\n       0.010524514516546875],\n      dtype='float64', name='rv_60min').\nYou can drop duplicate edges by setting the 'duplicates' kwarg\n",
+    "stderr": "--- Logging error ---\nTraceback (most recent call last):\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.1520.0_x64__qbz5n2kfra8p0\\Lib\\logging\\__init__.py\", line 1151, in emit\n    msg = self.format(record)\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.1520.0_x64__qbz5n2kfra8p0\\Lib\\logging\\__init__.py\", line 999, in format\n    return fmt.format(record)\n           ~~~~~~~~~~^^^^^^^^\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.1520.0_x64__qbz5n2kfra8p0\\Lib\\logging\\__init__.py\", line 712, in format\n    record.message = record.getMessage()\n                     ~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.1520.0_x64__qbz5n2kfra8p0\\Lib\\logging\\__init__.py\", line 400, in getMessage\n    msg = msg % self.args\n          ~~~~^~~~~~~~~~~\nTypeError: not all arguments converted during string formatting\nCall stack:\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\IV-CALC-2\\zGen3\\NEXT.py\", line 1188, in <module>\n    main()\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\IV-CALC-2\\zGen3\\NEXT.py\", line 858, in main\n    prediction = system.predict_next_day_rv(args.model)\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\IV-CALC-2\\zGen3\\NEXT.py\", line 725, in predict_next_day_rv\n    df = self.preprocessor.load_data(self.csv_path)\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\IV-CALC-2\\zGen3\\NEXT.py\", line 127, in load_data\n    self.logger.info(\"Downsampled data to interval: \" , INTERVAL, \"with shape: \", df.shape)\nMessage: 'Downsampled data to interval: '\nArguments: ('5min', 'with shape: ', (78, 6))\n--- Logging error ---\nTraceback (most recent call last):\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.1520.0_x64__qbz5n2kfra8p0\\Lib\\logging\\__init__.py\", line 1151, in emit\n    msg = self.format(record)\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.1520.0_x64__qbz5n2kfra8p0\\Lib\\logging\\__init__.py\", line 999, in format\n    return fmt.format(record)\n           ~~~~~~~~~~^^^^^^^^\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.1520.0_x64__qbz5n2kfra8p0\\Lib\\logging\\__init__.py\", line 712, in format\n    record.message = record.getMessage()\n                     ~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.1520.0_x64__qbz5n2kfra8p0\\Lib\\logging\\__init__.py\", line 400, in getMessage\n    msg = msg % self.args\n          ~~~~^~~~~~~~~~~\nTypeError: not all arguments converted during string formatting\nCall stack:\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\IV-CALC-2\\zGen3\\NEXT.py\", line 1188, in <module>\n    main()\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\IV-CALC-2\\zGen3\\NEXT.py\", line 858, in main\n    prediction = system.predict_next_day_rv(args.model)\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\IV-CALC-2\\zGen3\\NEXT.py\", line 725, in predict_next_day_rv\n    df = self.preprocessor.load_data(self.csv_path)\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\IV-CALC-2\\zGen3\\NEXT.py\", line 127, in load_data\n    self.logger.info(\"Downsampled data to interval: \" , INTERVAL, \"with shape: \", df.shape)\nMessage: 'Downsampled data to interval: '\nArguments: ('5min', 'with shape: ', (78, 6))\n",
+    "return_code": 1,
+    "extracted_variables": {},
+    "execution_time": 9.062391,
+    "applog_entries": []
+  },
+  {
+    "timestamp": "2025-06-25T17:18:17.010598",
+    "command": "python zGen4\\rv_forecast.py --mode forecast --data_path sliced_data\\2022-05-31.csv",
+    "description": "zGen4",
     "status": "completed",
-    "stdout": "2025-06-24 19:58:30,629 - RVForecasting - INFO - Logging initialized. Log file: logs\\rv_forecasting_20250624_195830.log\n2025-06-24 19:58:30,629 - RVForecasting - INFO - Using device: cpu\n2025-06-24 19:58:30,629 - RVForecasting - INFO - Starting prediction pipeline...\n2025-06-24 19:58:30,629 - RVForecasting - INFO - Found pre-trained model: models\\best_lstm_model.pt\n2025-06-24 19:58:30,640 - RVForecasting - INFO - Loading data from: sliced_data\\2022-06-08.csv\n2025-06-24 19:58:30,647 - RVForecasting - INFO - Loaded 2730 rows\n2025-06-24 19:58:30,661 - RVForecasting - INFO - Data spans from 2022-05-31 13:30:00 to 2022-06-08 19:55:00\n2025-06-24 19:58:30,661 - RVForecasting - INFO - Number of trading days: 7\n2025-06-24 19:58:30,662 - RVForecasting - INFO - Computing log returns and RV targets...\n2025-06-24 19:58:30,665 - RVForecasting - INFO - Removed 1 rows with NaN log returns\n2025-06-24 19:58:30,665 - RVForecasting - INFO - Engineering features...\n2025-06-24 19:58:30,686 - RVForecasting - INFO - Generated 25 features\n2025-06-24 19:58:30,687 - RVForecasting - INFO - Preparing sequences for training...\n2025-06-24 19:58:30,687 - RVForecasting - INFO - No valid RV_target found, fallback deployed\n2025-06-24 19:58:30,688 - RVForecasting - INFO - Using 545 samples with valid targets\n2025-06-24 19:58:30,694 - RVForecasting - WARNING - No valid RV_target found, using entire feature set without targets\n2025-06-24 19:58:30,696 - RVForecasting - INFO - Created 155 sequences of shape (155, 390, 19)\n2025-06-24 19:58:30,705 - RVForecasting - INFO - Next-day RV prediction: 0.005837\n2025-06-24 19:58:30,706 - RVForecasting - INFO - Annualized prediction: 0.092655\n\n==================================================\nNEXT-DAY REALIZED VOLATILITY PREDICTION\n==================================================\nModel: LSTM\nPrediction: 0.583673 %\nAPPLOG: Annualized Volatility (%): 9.265514\nAnnualized Prediction: 9.265514065671764 %\nTimestamp: 2025-06-24 19:58:30\n==================================================\n",
-    "stderr": "--- Logging error ---\nTraceback (most recent call last):\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.1520.0_x64__qbz5n2kfra8p0\\Lib\\logging\\__init__.py\", line 1151, in emit\n    msg = self.format(record)\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.1520.0_x64__qbz5n2kfra8p0\\Lib\\logging\\__init__.py\", line 999, in format\n    return fmt.format(record)\n           ~~~~~~~~~~^^^^^^^^\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.1520.0_x64__qbz5n2kfra8p0\\Lib\\logging\\__init__.py\", line 712, in format\n    record.message = record.getMessage()\n                     ~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.1520.0_x64__qbz5n2kfra8p0\\Lib\\logging\\__init__.py\", line 400, in getMessage\n    msg = msg % self.args\n          ~~~~^~~~~~~~~~~\nTypeError: not all arguments converted during string formatting\nCall stack:\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\zGen3\\NEXT.py\", line 1188, in <module>\n    main()\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\zGen3\\NEXT.py\", line 858, in main\n    prediction = system.predict_next_day_rv(args.model)\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\zGen3\\NEXT.py\", line 725, in predict_next_day_rv\n    df = self.preprocessor.load_data(self.csv_path)\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\zGen3\\NEXT.py\", line 127, in load_data\n    self.logger.info(\"Downsampled data to interval: \" , INTERVAL, \"with shape: \", df.shape)\nMessage: 'Downsampled data to interval: '\nArguments: ('5min', 'with shape: ', (546, 6))\n--- Logging error ---\nTraceback (most recent call last):\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.1520.0_x64__qbz5n2kfra8p0\\Lib\\logging\\__init__.py\", line 1151, in emit\n    msg = self.format(record)\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.1520.0_x64__qbz5n2kfra8p0\\Lib\\logging\\__init__.py\", line 999, in format\n    return fmt.format(record)\n           ~~~~~~~~~~^^^^^^^^\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.1520.0_x64__qbz5n2kfra8p0\\Lib\\logging\\__init__.py\", line 712, in format\n    record.message = record.getMessage()\n                     ~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_3.13.1520.0_x64__qbz5n2kfra8p0\\Lib\\logging\\__init__.py\", line 400, in getMessage\n    msg = msg % self.args\n          ~~~~^~~~~~~~~~~\nTypeError: not all arguments converted during string formatting\nCall stack:\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\zGen3\\NEXT.py\", line 1188, in <module>\n    main()\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\zGen3\\NEXT.py\", line 858, in main\n    prediction = system.predict_next_day_rv(args.model)\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\zGen3\\NEXT.py\", line 725, in predict_next_day_rv\n    df = self.preprocessor.load_data(self.csv_path)\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\zGen3\\NEXT.py\", line 127, in load_data\n    self.logger.info(\"Downsampled data to interval: \" , INTERVAL, \"with shape: \", df.shape)\nMessage: 'Downsampled data to interval: '\nArguments: ('5min', 'with shape: ', (546, 6))\n",
+    "stdout": "Starting current day RV forecast...\nModel loaded successfully\nAvailable models: ['lasso', 'pcr', 'random_forest', 'xgboost', 'neural_network']\nError forecasting current day RV: [Errno 2] No such file or directory: 'sliced_data\\\\2022-05-31.csv\\\\SPY.csv'\nForecast failed. Check logs for errors.\n",
+    "stderr": "",
     "return_code": 0,
-    "extracted_variables": {
-      "annualized_volatility": 9.265514
-    },
-    "execution_time": 9.907694,
-    "applog_entries": [
-      "Annualized Volatility (%): 9.265514"
-    ]
+    "extracted_variables": {},
+    "execution_time": 5.473256,
+    "applog_entries": []
+  },
+  {
+    "timestamp": "2025-06-25T17:31:39.223436",
+    "command": "python zGen1\\RUNforecast.py --data sliced_data\\2022-05-31.csv",
+    "description": "zGen1",
+    "status": "failed",
+    "stdout": "",
+    "stderr": "2025-06-25 17:31:43,634 - Deepalgo - INFO - Loading data from sliced_data\\2022-05-31.csv\nC:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\IV-CALC-2\\zGen1\\Deepalgo.py:124: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.\n  df = df.fillna(method='ffill', limit=5)\n2025-06-25 17:31:43,643 - Deepalgo - INFO - Filtered to market hours 13:30-20:00: 390 observations\n2025-06-25 17:31:43,644 - Deepalgo - INFO - Data loaded and cleaned: 390 observations\n2025-06-25 17:31:43,644 - Deepalgo - INFO - Computed 389 log returns\n2025-06-25 17:31:43,646 - Deepalgo - INFO - Computed naive RV for 1 periods\nTraceback (most recent call last):\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\IV-CALC-2\\zGen1\\RUNforecast.py\", line 17, in <module>\n    features_df = ForecastingModels.prepare_har_features(rv_series)\n  File \"C:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\IV-CALC-2\\zGen1\\Deepalgo.py\", line 319, in prepare_har_features\n    raise ValueError(f\"Insufficient data: {len(rv_series)} observations. Need at least 25.\")\nValueError: Insufficient data: 1 observations. Need at least 25.\n",
+    "return_code": 1,
+    "extracted_variables": {},
+    "execution_time": 4.708366,
+    "applog_entries": []
+  },
+  {
+    "timestamp": "2025-06-25T17:31:43.933222",
+    "command": [
+      "zGen2\\.venv\\Scripts\\python.exe",
+      "zGen2\\main.py",
+      "predict",
+      "--data",
+      "sliced_data\\2022-05-31.csv",
+      "--model",
+      "models\\",
+      "--output",
+      "forecasts\\"
+    ],
+    "description": "zGen2",
+    "status": "failed",
+    "stdout": "2025-06-25 17:31:49,187 - INFO - Starting prediction process\n2025-06-25 17:31:49,187 - INFO - Loading data from sliced_data\\2022-05-31.csv\n2025-06-25 17:31:49,196 - INFO - Calculating realized volatility and features\n2025-06-25 17:31:49,203 - ERROR - Prediction process failed: No valid data points after feature engineering\nPrediction failed: No valid data points after feature engineering\n",
+    "stderr": "2025-06-25 17:31:45.825633: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.\n2025-06-25 17:31:47.279169: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.\n",
+    "return_code": 1,
+    "extracted_variables": {},
+    "execution_time": 5.845207,
+    "applog_entries": []
   }
 ]

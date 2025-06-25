@@ -242,7 +242,7 @@ def main():
             file_path = os.path.join(folder, file)
             date_str = os.path.splitext(file)[0]  # e.g., '2022-06-01' from '2022-06-01.csv'
 
-            print(f"Processing date: {date_str}")
+            print(f"Processing date: {date_str} in File: {file_path}")
 
             command1 = f"python zGen1\\RUNforecast.py --data {file_path}"
             result1 = runner.run_command(
@@ -262,9 +262,15 @@ def main():
                 extract_patterns={"annualized_volatility": r"Annualized Volatility\s*\(%\):\s*([\d\.]+)"},
                description="zGen3"
             )
-            command4 = "python zGen4\\rv_forecast.py --mode forecast --data_path data/"
+            command4 = f"python zGen4\\rv_forecast.py --mode forecast --data_path {file_path}" ## Not working
             result4 = runner.run_command(
                 command4, 
+                extract_patterns={"annualized_volatility": r"Annualized Volatility \(%\)[:\s]+([0-9.]+)"},
+                description="zGen4"
+            )
+            command5 = f"python zGen3\\NEXT.py predict --csv-path {file_path} --model transformer"
+            result5 = runner.run_command(
+                command5, 
                 extract_patterns={"annualized_volatility": r"Annualized Volatility \(%\)[:\s]+([0-9.]+)"},
                 description="zGen4"
             )

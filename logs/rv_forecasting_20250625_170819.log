@@ -1,0 +1,4 @@
+2025-06-25 17:08:19,170 - RVForecasting - INFO - Logging initialized. Log file: logs\rv_forecasting_20250625_170819.log
+2025-06-25 17:08:19,170 - RVForecasting - INFO - Using device: cpu
+2025-06-25 17:08:19,170 - RVForecasting - INFO - Starting prediction pipeline...
+2025-06-25 17:08:19,171 - RVForecasting - INFO - Found pre-trained model: models\best_transformer_model.pt

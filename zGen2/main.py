@@ -1329,5 +1329,5 @@ python zGen2\\main.py train --data data\SPY.csv --output models/
 4. **Make Predictions**:
 
 python zGen2\\main.py predict --data data\SPY.csv --model models/ --output forecasts/
-python zGen2\\main.py predict --data sliced_data\\2022-05-31.csv  --model models/ --output forecasts/
+python zGen2\\main.py predict --data sliced_data\\2024-05-31.csv  --model models/ --output forecasts/
 """

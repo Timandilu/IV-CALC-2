@@ -1328,7 +1328,7 @@ def main():
         global model_file
         model_file = Path(args.model_path) / 'rv_forecaster.pkl'
         # Load price data
-        price_file = Path(args.data_path) / "SPY.csv" ##CHANGE THIS TO YOUR PRICE DATA
+        price_file = Path(args.data_path) ##CHANGE THIS TO YOUR PRICE DATA
         if price_file.exists():
             df_prices = pd.read_csv(price_file)
             df_prices = downsample_prices(df_prices, interval)  # Downsample to 5-minute intervals
@@ -1446,7 +1446,7 @@ def main():
         print("Available models:", list(forecaster.ensemble.models.keys()))
         print("Models dict:", forecaster.ensemble.models)
         # Load new data
-        price_file = Path(args.data_path) / 'SPY.csv'  # Change this to your new price data file
+        price_file = Path(args.data_path)  # Change this to your new price data file
         if price_file.exists():
             df_prices = pd.read_csv(price_file)
             df_prices = downsample_prices(df_prices, interval)  # Downsample to 5-minute intervals
@@ -1688,7 +1688,7 @@ def main():
         forecaster.load_model(str(model_file))
         print("Model loaded successfully")
         print("Available models:", list(forecaster.ensemble.models.keys()))
-        price_file = Path(args.data_path) / "SPY.csv" ##CHANGE THIS TO YOUR PRICE DATA
+        price_file = Path(args.data_path) ##CHANGE THIS TO YOUR PRICE DATA
         def app_log(msg):
             print(f"APPLOG: {msg}")
         forecast_results = forecaster.forecast_current_day_rv(price_file, args.symbol)
