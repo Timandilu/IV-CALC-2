@@ -1,0 +1,35 @@
+{
+  "predictions": {
+    "HAR": 0.000149601654673379,
+    "RF": 0.00011916209999999988,
+    "XGB": 0.00010613223275868222,
+    "Ensemble": 0.00012650509948960528
+  },
+  "metadata": {
+    "prediction_date": "2025-06-25T20:17:27.879936",
+    "data_end_date": "2023-03-24T19:59:00",
+    "models_used": [
+      "HAR",
+      "RF",
+      "XGB",
+      "Ensemble"
+    ],
+    "data_points": 79952,
+    "latest_rv": 0.00011983,
+    "config": {
+      "har_lags": [
+        1,
+        5,
+        22
+      ],
+      "train_ratio": 0.7,
+      "sequence_length": 30,
+      "ensemble_weights": {
+        "har": 0.3,
+        "rf": 0.25,
+        "xgb": 0.25,
+        "lstm": 0.2
+      }
+    }
+  }
+}

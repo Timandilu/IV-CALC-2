@@ -9,3 +9,25 @@
 2025-06-25 11:03:08,853 - RVForecasting - INFO - Computing log returns and RV targets...
 2025-06-25 11:03:09,131 - RVForecasting - INFO - Removed 1 rows with NaN log returns
 2025-06-25 11:03:09,132 - RVForecasting - INFO - Engineering features...
+2025-06-25 11:03:10,118 - RVForecasting - INFO - Generated 25 features
+2025-06-25 11:03:10,119 - RVForecasting - INFO - Preparing sequences for training...
+2025-06-25 11:03:10,141 - RVForecasting - INFO - Using 59239 samples with valid targets
+2025-06-25 11:03:23,444 - RVForecasting - INFO - Created 58849 sequences of shape (58849, 390, 19)
+2025-06-25 11:03:23,446 - RVForecasting - INFO - Train: 42371, Val: 10593, Test: 5885
+2025-06-25 11:03:23,453 - RVForecasting - INFO - Training TRANSFORMER model...
+2025-06-25 11:03:28,619 - RVForecasting - INFO - Starting training for transformer...
+2025-06-25 11:03:28,620 - RVForecasting - INFO - Epoch 1/100
+2025-06-25 12:32:27,120 - RVForecasting - INFO - Epoch 1/100 - Train Loss: 0.000579, Val Loss: 0.000045
+2025-06-25 12:32:27,140 - RVForecasting - INFO - Epoch 2/100
+2025-06-25 14:03:21,246 - RVForecasting - INFO - Epoch 2/100 - Train Loss: 0.000259, Val Loss: 0.000043
+2025-06-25 14:03:21,252 - RVForecasting - INFO - Epoch 3/100
+2025-06-25 15:33:26,219 - RVForecasting - INFO - Epoch 3/100 - Train Loss: nan, Val Loss: nan
+2025-06-25 15:33:26,220 - RVForecasting - INFO - Epoch 4/100
+2025-06-25 17:03:47,447 - RVForecasting - INFO - Epoch 4/100 - Train Loss: nan, Val Loss: nan
+2025-06-25 17:03:47,448 - RVForecasting - INFO - Epoch 5/100
+2025-06-25 18:36:08,700 - RVForecasting - INFO - Epoch 5/100 - Train Loss: nan, Val Loss: nan
+2025-06-25 18:36:08,701 - RVForecasting - INFO - Epoch 6/100
+2025-06-25 20:09:16,111 - RVForecasting - INFO - Epoch 6/100 - Train Loss: nan, Val Loss: nan
+2025-06-25 20:09:16,111 - RVForecasting - INFO - Epoch 7/100
+2025-06-25 21:42:23,022 - RVForecasting - INFO - Epoch 7/100 - Train Loss: nan, Val Loss: nan
+2025-06-25 21:42:23,023 - RVForecasting - INFO - Epoch 8/100

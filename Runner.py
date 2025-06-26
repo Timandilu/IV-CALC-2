@@ -226,13 +226,29 @@ class CommandRunner:
         }
     
     def ensemble_result(self):
-        values = [
-        entry["extracted_variables"]["annualized_volatility"]
-        for entry in self.results
-        if "extracted_variables" in entry and "annualized_volatility" in entry["extracted_variables"]
-        ]
-        # Compute the average
-        average = sum(values) / len(values) if values else None
+        """
+        Calculate a weighted ensemble using only:
+        - Command 3 (zGen3lastm): weight 0.77
+        - Command 2 (zGen2): weight 0.23
+        """
+        # Find the last result for each description
+        val_zgen3 = None
+        val_zgen2 = None
+        # Search in reverse to get the latest
+        for entry in reversed(self.results):
+            desc = entry.get("description", "")
+            if val_zgen3 is None and desc == "zGen3lastm":
+                val_zgen3 = entry.get("extracted_variables", {}).get("annualized_volatility", None)
+            if val_zgen2 is None and desc == "zGen2":
+                val_zgen2 = entry.get("extracted_variables", {}).get("annualized_volatility", None)
+            if val_zgen3 is not None and val_zgen2 is not None:
+                break
+
+        # Only calculate if both are present and not None
+        if val_zgen3 is not None and val_zgen2 is not None:
+            average = 0.77 * val_zgen3 + 0.23 * val_zgen2
+        else:
+            average = None
         return average
         
 
@@ -259,7 +275,7 @@ def main():
     result3 = runner.run_command(
         command3, 
         extract_patterns={"annualized_volatility": r"Annualized Volatility\s*\(%\):\s*([\d\.]+)"},
-       description="zGen3"
+       description="zGen3lastm"
     )
     command4 = "python zGen4\\rv_forecast.py --mode forecast --data_path data/"
     result4 = runner.run_command(
@@ -271,7 +287,7 @@ def main():
     result5 = runner.run_command(
         command5, 
         extract_patterns={"annualized_volatility": r"Annualized Volatility \(%\)[:\s]+([0-9.]+)"},
-       description="zGen4"
+       description="zGen3tf"
     )
     """
     # Example: Another model for comparison
@@ -282,6 +298,8 @@ def main():
        description="description"
     )
     # """
+    # Calculate ensemble
+
     # Print summary
     print("\n" + "="*50)
     print("RESULTS SUMMARY")

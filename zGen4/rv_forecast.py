@@ -1688,7 +1688,7 @@ def main():
         forecaster.load_model(str(model_file))
         print("Model loaded successfully")
         print("Available models:", list(forecaster.ensemble.models.keys()))
-        price_file = Path(args.data_path) ##CHANGE THIS TO YOUR PRICE DATA
+        price_file = Path(args.data_path) / "SPY.csv" ##CHANGE THIS TO YOUR PRICE DATA
         def app_log(msg):
             print(f"APPLOG: {msg}")
         forecast_results = forecaster.forecast_current_day_rv(price_file, args.symbol)

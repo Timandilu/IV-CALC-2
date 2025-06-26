@@ -1,0 +1,15 @@
+2025-06-26 19:50:00,759 - INFO - Starting prediction process
+2025-06-26 19:50:00,759 - INFO - Loading data from sliced_data\2025-01-07.csv
+2025-06-26 19:50:01,108 - INFO - Calculating realized volatility and features
+2025-06-26 19:50:01,578 - INFO - Prepared 633 samples for prediction
+2025-06-26 19:50:01,578 - INFO - Loading trained models
+2025-06-26 19:50:01,579 - INFO - HAR model loaded
+2025-06-26 19:50:01,601 - INFO - Random Forest model loaded
+2025-06-26 19:50:01,605 - INFO - XGBoost model loaded
+2025-06-26 19:50:01,719 - WARNING - Failed to load LSTM model: Could not locate function 'mse'. Make sure custom classes are decorated with `@keras.saving.register_keras_serializable()`. Full object config: {'module': 'keras.metrics', 'class_name': 'function', 'config': 'mse', 'registered_name': 'mse'}
+2025-06-26 19:50:01,719 - INFO - Making predictions
+2025-06-26 19:50:01,722 - INFO - HAR prediction: 0.000083
+2025-06-26 19:50:01,727 - INFO - Random Forest prediction: 0.000091
+2025-06-26 19:50:01,728 - INFO - XGBoost prediction: 0.000072
+2025-06-26 19:50:01,728 - INFO - Ensemble prediction: 0.000082
+2025-06-26 19:50:01,733 - INFO - Predictions saved to forecasts\predictions_20250626_195001.json and forecasts\predictions_20250626_195001.csv

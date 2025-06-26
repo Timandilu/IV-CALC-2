@@ -1,0 +1,6 @@
+timestamp,command,description,status,execution_time,applog_count,applog_entries,annualized_volatility
+2025-06-26T19:40:26.139103,,zGen1,completed,4.198767,1,Annualized Volatility (%): 9.5418,9.5418
+2025-06-26T19:40:30.338783,,zGen2,completed,5.393838,1,Annualized Volatility (%): 10.7438,10.7438
+2025-06-26T19:40:35.733631,,zGen3lastm,completed,9.197485,1,Annualized Volatility (%): 7.296512,7.296512
+2025-06-26T19:40:44.932074,,zGen4,completed,5.208263,1,Annualized Volatility (%): 14.980064,14.980064
+2025-06-26T19:40:50.141468,,zGen3tf,completed,8.889251,1,Annualized Volatility (%): 8.027518,8.027518

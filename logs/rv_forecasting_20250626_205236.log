@@ -1,0 +1,19 @@
+2025-06-26 20:52:36,687 - RVForecasting - INFO - Logging initialized. Log file: logs\rv_forecasting_20250626_205236.log
+2025-06-26 20:52:36,687 - RVForecasting - INFO - Using device: cpu
+2025-06-26 20:52:36,687 - RVForecasting - INFO - Starting prediction pipeline...
+2025-06-26 20:52:36,688 - RVForecasting - INFO - Found pre-trained model: models\best_lstm_model.pt
+2025-06-26 20:52:36,701 - RVForecasting - INFO - Loading data from: sliced_data\2025-05-20.csv
+2025-06-26 20:52:36,961 - RVForecasting - INFO - Loaded 289462 rows
+2025-06-26 20:52:37,138 - RVForecasting - INFO - Data spans from 2022-05-31 13:30:00 to 2025-05-20 19:55:00
+2025-06-26 20:52:37,141 - RVForecasting - INFO - Number of trading days: 746
+2025-06-26 20:52:37,141 - RVForecasting - INFO - Computing log returns and RV targets...
+2025-06-26 20:52:37,403 - RVForecasting - INFO - Removed 1 rows with NaN log returns
+2025-06-26 20:52:37,403 - RVForecasting - INFO - Engineering features...
+2025-06-26 20:52:38,459 - RVForecasting - INFO - Generated 25 features
+2025-06-26 20:52:38,465 - RVForecasting - INFO - Preparing sequences for training...
+2025-06-26 20:52:38,465 - RVForecasting - INFO - No valid RV_target found, fallback deployed
+2025-06-26 20:52:38,475 - RVForecasting - INFO - Using 57908 samples with valid targets
+2025-06-26 20:52:38,515 - RVForecasting - WARNING - No valid RV_target found, using entire feature set without targets
+2025-06-26 20:52:39,057 - RVForecasting - INFO - Created 57518 sequences of shape (57518, 390, 19)
+2025-06-26 20:52:39,068 - RVForecasting - INFO - Next-day RV prediction: 0.006779
+2025-06-26 20:52:39,068 - RVForecasting - INFO - Annualized prediction: 0.107616
