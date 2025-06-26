@@ -1,0 +1,44 @@
+[
+  {
+    "timestamp": "2025-06-26T22:20:36.585318",
+    "command": "python zGen1\\RUNforecast.py --data data/SPY.csv",
+    "description": "zGen1",
+    "status": "completed",
+    "stdout": "Forecasted Realized Variance: 5.939367164766309e-05\nDaily Volatility (%): 0.7707\nAnnualized Volatility (%): 12.2341\nAPPLOG: Annualized Volatility (%): 12.2341\n",
+    "stderr": "2025-06-26 22:20:40,090 - Deepalgo - INFO - Loading data from data/SPY.csv\nC:\\Users\\Timan\\Downloads\\StockAI\\IV Calculator\\IV Calc 2\\IV-CALC-2\\zGen1\\Deepalgo.py:124: FutureWarning: DataFrame.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.\n  df = df.fillna(method='ffill', limit=5)\n2025-06-26 22:20:40,446 - Deepalgo - INFO - Filtered to market hours 13:30-20:00: 284391 observations\n2025-06-26 22:20:40,447 - Deepalgo - INFO - Data loaded and cleaned: 284391 observations\n2025-06-26 22:20:40,450 - Deepalgo - INFO - Computed 284390 log returns\n2025-06-26 22:20:40,540 - Deepalgo - INFO - Computed naive RV for 771 periods\n2025-06-26 22:20:40,548 - Deepalgo - INFO - HAR model fitted - Test R\u00c2\u00b2: 0.1370, Test MSE: 0.000000\n",
+    "return_code": 0,
+    "extracted_variables": {
+      "annualized_volatility": 12.2341
+    },
+    "execution_time": 4.199603,
+    "applog_entries": [
+      "Annualized Volatility (%): 12.2341"
+    ]
+  },
+  {
+    "timestamp": "2025-06-26T22:20:40.786567",
+    "command": [
+      "zGen2\\.venv\\Scripts\\python.exe",
+      "zGen2\\main.py",
+      "predict",
+      "--data",
+      "data\\SPY.csv",
+      "--model",
+      "models\\",
+      "--output",
+      "forecasts\\"
+    ],
+    "description": "zGen2",
+    "status": "completed",
+    "stdout": "2025-06-26 22:20:44,990 - INFO - Starting prediction process\n2025-06-26 22:20:44,990 - INFO - Loading data from data\\SPY.csv\n2025-06-26 22:20:45,413 - INFO - Calculating realized volatility and features\n2025-06-26 22:20:45,951 - INFO - Prepared 749 samples for prediction\n2025-06-26 22:20:45,952 - INFO - Loading trained models\n2025-06-26 22:20:45,952 - INFO - HAR model loaded\n2025-06-26 22:20:45,975 - INFO - Random Forest model loaded\n2025-06-26 22:20:45,979 - INFO - XGBoost model loaded\n2025-06-26 22:20:46,103 - WARNING - Failed to load LSTM model: Could not locate function 'mse'. Make sure custom classes are decorated with `@keras.saving.register_keras_serializable()`. Full object config: {'module': 'keras.metrics', 'class_name': 'function', 'config': 'mse', 'registered_name': 'mse'}\n2025-06-26 22:20:46,103 - INFO - Making predictions\n2025-06-26 22:20:46,107 - INFO - HAR prediction: 0.000058\n2025-06-26 22:20:46,112 - INFO - Random Forest prediction: 0.000025\n2025-06-26 22:20:46,114 - INFO - XGBoost prediction: 0.000072\n2025-06-26 22:20:46,114 - INFO - Ensemble prediction: 0.000052\n2025-06-26 22:20:46,120 - INFO - Predictions saved to forecasts\\predictions_20250626_222046.json and forecasts\\predictions_20250626_222046.csv\n\n============================================================\nREALIZED VOLATILITY PREDICTIONS\n============================================================\nData Period: 2022-05-31 to 2025-06-26\nLatest RV: 0.000021\nLatest RV \nPrediction Date: 2025-06-26 22:20:46\n------------------------------------------------------------\nHAR         : 0.000058\nRF          : 0.000025\nXGB         : 0.000072\nEnsemble    : 0.000052\n============================================================\n\nRecommended prediction (Ensemble): 0.000052\nAnnualized RV: 11.463856\nAPPLOG: Annualized Volatility (%): 11.4639\n",
+    "stderr": "2025-06-26 22:20:42.538543: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.\n2025-06-26 22:20:43.543656: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.\n2025-06-26 22:20:45.987479: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.\nTo enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.\n",
+    "return_code": 0,
+    "extracted_variables": {
+      "annualized_volatility": 11.4639
+    },
+    "execution_time": 5.791944,
+    "applog_entries": [
+      "Annualized Volatility (%): 11.4639"
+    ]
+  }
+]
