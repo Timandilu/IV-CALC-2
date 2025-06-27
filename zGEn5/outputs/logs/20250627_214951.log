@@ -1,2 +1,16 @@
 {"timestamp": "2025-06-27T21:49:51.996368", "level": "INFO", "logger": "__main__", "message": "Starting full volatility forecasting pipeline", "module": "main", "function": "_log", "line": 222}
 {"timestamp": "2025-06-27T21:49:51.997049", "level": "INFO", "logger": "__main__", "message": "Processing symbol: SPY", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:49:53.010915", "level": "INFO", "logger": "__main__", "message": "Data validation complete for SPY: 299130 -> 298878 records", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:49:53.011850", "level": "INFO", "logger": "__main__", "message": "Engineering features for SPY", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:49:53.574699", "level": "INFO", "logger": "__main__", "message": "Feature engineering complete: 61 features, 151067 samples", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:49:53.808532", "level": "INFO", "logger": "__main__", "message": "Creating sequences", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:49:53.809005", "level": "INFO", "logger": "__main__", "message": "Total iterations: 151007", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:49:54.427510", "level": "INFO", "logger": "__main__", "message": "Training lstm model for SPY", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:49:54.427983", "level": "INFO", "logger": "__main__", "message": "Optimizing hyperparameters for lstm", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:49:54.431801", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:51:29.795900", "level": "INFO", "logger": "__main__", "message": "Epoch 0: Train Loss = 0.000047, Val Loss = 0.000011", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T22:06:46.257970", "level": "INFO", "logger": "__main__", "message": "Epoch 10: Train Loss = 0.000015, Val Loss = 0.000012", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T22:08:11.356544", "level": "INFO", "logger": "__main__", "message": "Early stopping at epoch 11", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T22:08:18.009327", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T22:09:43.720253", "level": "INFO", "logger": "__main__", "message": "Epoch 0: Train Loss = 0.000743, Val Loss = 0.000028", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T22:20:47.377862", "level": "INFO", "logger": "__main__", "message": "Epoch 10: Train Loss = 0.000016, Val Loss = 0.000012", "module": "main", "function": "_log", "line": 222}
