@@ -1,0 +1,10 @@
+{"timestamp": "2025-06-27T21:49:05.387653", "level": "INFO", "logger": "__main__", "message": "Starting full volatility forecasting pipeline", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:49:05.388259", "level": "INFO", "logger": "__main__", "message": "Processing symbol: SPY", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:49:06.302068", "level": "INFO", "logger": "__main__", "message": "Data validation complete for SPY: 299130 -> 298878 records", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:49:06.303000", "level": "INFO", "logger": "__main__", "message": "Engineering features for SPY", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:49:06.792860", "level": "INFO", "logger": "__main__", "message": "Feature engineering complete: 61 features, 151067 samples", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:49:07.036599", "level": "INFO", "logger": "__main__", "message": "Creating sequences", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:49:07.037034", "level": "INFO", "logger": "__main__", "message": "Total iterations: 151007", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:49:07.681623", "level": "INFO", "logger": "__main__", "message": "Training lstm model for SPY", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:49:07.682146", "level": "INFO", "logger": "__main__", "message": "Optimizing hyperparameters for lstm", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:49:07.686183", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}

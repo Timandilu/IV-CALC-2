@@ -1,0 +1,4 @@
+{"timestamp": "2025-06-27T19:51:39.162541", "level": "INFO", "logger": "__main__", "message": "Starting full volatility forecasting pipeline", "module": "main", "function": "_log", "line": 222, "memory_usage_mb": 433.125, "cpu_percent": 70.2}
+{"timestamp": "2025-06-27T19:51:39.163324", "level": "INFO", "logger": "__main__", "message": "Processing symbol: TEST", "module": "main", "function": "_log", "line": 222, "memory_usage_mb": 433.1328125, "cpu_percent": 0.0}
+{"timestamp": "2025-06-27T19:51:39.605570", "level": "ERROR", "logger": "__main__", "message": "Error processing TEST: Insufficient data for TEST: 24 < 1000", "module": "main", "function": "_log", "line": 222, "memory_usage_mb": 437.64453125, "cpu_percent": 76.3}
+{"timestamp": "2025-06-27T19:51:39.606381", "level": "INFO", "logger": "__main__", "message": "Pipeline completed successfully", "module": "main", "function": "_log", "line": 222, "memory_usage_mb": 437.64453125, "cpu_percent": 0.0}

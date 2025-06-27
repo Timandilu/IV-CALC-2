@@ -1,0 +1,7 @@
+{"timestamp": "2025-06-27T21:35:06.006085", "level": "INFO", "logger": "__main__", "message": "Starting full volatility forecasting pipeline", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:35:06.006653", "level": "INFO", "logger": "__main__", "message": "Processing symbol: SPY", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:35:06.698078", "level": "INFO", "logger": "__main__", "message": "Data validation complete for SPY: 299130 -> 298878 records", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:35:06.698595", "level": "INFO", "logger": "__main__", "message": "Engineering features for SPY", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:35:07.182321", "level": "INFO", "logger": "__main__", "message": "Feature engineering complete: 61 features, 151067 samples", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:35:07.516355", "level": "INFO", "logger": "__main__", "message": "Creating sequences", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:35:07.517220", "level": "INFO", "logger": "__main__", "message": "Total iterations: 151007", "module": "main", "function": "_log", "line": 222}

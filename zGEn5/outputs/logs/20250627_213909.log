@@ -1,0 +1,61 @@
+{"timestamp": "2025-06-27T21:39:09.681686", "level": "INFO", "logger": "__main__", "message": "Starting full volatility forecasting pipeline", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:09.682484", "level": "INFO", "logger": "__main__", "message": "Processing symbol: SPY", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:10.374917", "level": "INFO", "logger": "__main__", "message": "Data validation complete for SPY: 299130 -> 298878 records", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:10.375564", "level": "INFO", "logger": "__main__", "message": "Engineering features for SPY", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:10.847758", "level": "INFO", "logger": "__main__", "message": "Feature engineering complete: 61 features, 151067 samples", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:11.073626", "level": "INFO", "logger": "__main__", "message": "Creating sequences", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:11.074164", "level": "INFO", "logger": "__main__", "message": "Total iterations: 151007", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:11.108135", "level": "INFO", "logger": "__main__", "message": "Training lstm model for SPY", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:11.108555", "level": "INFO", "logger": "__main__", "message": "Optimizing hyperparameters for lstm", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:11.112444", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:11.362358", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:11.429388", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:11.589340", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:11.660276", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:11.803870", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:11.868755", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:12.046780", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:12.114445", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:12.351626", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:12.430355", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:12.690838", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:12.757736", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:12.934082", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:13.000449", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:13.164233", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:13.234042", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:13.408391", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:13.474986", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:13.629969", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:13.712759", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:13.867832", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:13.953620", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:14.100704", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:14.184911", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:14.333245", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:14.417459", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:14.569444", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:14.655101", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:14.811210", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:14.964069", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:15.141940", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:15.248014", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:15.423693", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:15.504277", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:15.717701", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:15.808607", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:16.044688", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:16.154960", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:16.397355", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:16.484699", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:16.664316", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:16.746032", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:16.914833", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:17.004040", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:17.161338", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:17.250793", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:17.411273", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:17.492136", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:17.644664", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:17.732662", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T21:39:17.889294", "level": "WARNING", "logger": "__main__", "message": "Trial failed: '<=' not supported between instances of 'float' and 'str'", "module": "main", "function": "_log", "line": 222}

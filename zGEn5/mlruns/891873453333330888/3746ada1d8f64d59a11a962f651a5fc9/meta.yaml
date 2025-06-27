@@ -1,0 +1,14 @@
+artifact_uri: file:C:/Users/Timan/Downloads/StockAI/IV Calculator/IV Calc 2/IV-CALC-2/zGEn5/mlruns/891873453333330888/3746ada1d8f64d59a11a962f651a5fc9/artifacts
+end_time: 1751052705825
+entry_point_name: ''
+experiment_id: '891873453333330888'
+lifecycle_stage: active
+run_id: 3746ada1d8f64d59a11a962f651a5fc9
+run_name: SPY_20250627_213138
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751052699127
+status: 3
+tags: []
+user_id: Timan

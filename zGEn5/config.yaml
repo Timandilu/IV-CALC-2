@@ -1,0 +1,99 @@
+# =====================================================================
+# Advanced Volatility Forecasting – Master Configuration
+# =====================================================================
+
+# ---------------------------------------------------------------------
+# 1. Data ingestion and preparation
+# ---------------------------------------------------------------------
+data:
+  symbols: ["SPY"]            # List of tickers (Yahoo symbols or custom)
+  start_date: "2022-05-31"           # ISO date – earlier start captures more history
+  end_date: "today"             # “today” if you want latest
+  interval: "1m"                     # yfinance granularities: 1m,2m,5m,15m,30m,60m,1h,1d
+  data_sources: ["local"]         # Plug-ins: yfinance | polygon | <custom>
+  cache_dir: "data/cache"            # Pickle cache for raw pulls
+  raw_data_dir: "data/raw"           # Unmodified CSV/Parquet dumps
+  processed_data_dir: "data/processed"
+  validation_split: 0.2              # 20 % of *train* further held out for val
+  test_split: 0.1                    # 10 % as final unseen test
+  min_periods: 1000                  # Abort if fewer rows
+
+# ---------------------------------------------------------------------
+# 2. Feature engineering
+# ---------------------------------------------------------------------
+features:
+  returns_windows: [5, 10, 20, 30]   # Rolling mean/std/kurt windows (bars, not days)
+  volatility_windows: [5, 10, 20]
+  technical_indicators: ["rsi", "macd", "bb", "atr"]  # Pick any subset
+  sequence_length: 60                # Timesteps fed to LSTM/Transformer
+  target_horizon: 1                  # Realised-vol forecast horizon
+  scaling_method: "standard"         # standard | robust | minmax
+  feature_selection: true            # Enable importance filtering
+  feature_importance_threshold: 0.01 # Drop features below this SHAP weight
+
+# ---------------------------------------------------------------------
+# 3. Model hyper-params (used as defaults; Optuna may mutate)
+# ---------------------------------------------------------------------
+models:
+  model_types: ["lstm", "transformer", "ridge"]  # Any subset of factory keys
+  # LSTM specifics
+  lstm_hidden_size: 128
+  lstm_num_layers: 2
+  # Transformer specifics
+  transformer_d_model: 128
+  transformer_nhead: 8
+  transformer_num_layers: 6
+  # Common deep-net knobs
+  dropout: 0.2
+  batch_size: 64
+  epochs: 50
+  learning_rate: 0.001
+  weight_decay: 1e-5
+  early_stopping_patience: 10
+  gradient_clip_value: 1.0
+
+# ---------------------------------------------------------------------
+# 4. Hyper-parameter optimisation
+# ---------------------------------------------------------------------
+optimization:
+  enabled: true
+  n_trials: 50
+  timeout: 7200                # Seconds (2 h)
+  pruner: "median"             # Optuna pruner: median | none | ...
+  sampler: "tpe"               # tpe | random | ...
+  optimize_metric: "val_rmse"  # val_rmse | val_mae | val_r2
+  direction: "minimize"        # minimize | maximize
+  cv_folds: 3
+
+# ---------------------------------------------------------------------
+# 5. Ensemble strategy
+# ---------------------------------------------------------------------
+ensemble:
+  enabled: true
+  methods: ["voting", "stacking"]  # Choose any combination
+  stacking_meta_model: "ridge"     # ridge | lasso | ...
+  voting_weights: null             # [w1, w2, …] matching models order; null = equal
+
+# ---------------------------------------------------------------------
+# 6. Experiment tracking
+# ---------------------------------------------------------------------
+experiment:
+  tracking_uri: "file:./mlruns"
+  experiment_name: "volatility_forecasting"
+  run_name: null                # Auto-generated if null
+  log_artifacts: true
+  log_models: true
+
+# ---------------------------------------------------------------------
+# 7. System / infra
+# ---------------------------------------------------------------------
+system:
+  random_seed: 42
+  n_jobs: -1                    # -1 -> all logical cores
+  gpu_enabled: true
+  distributed: false            # Set true for Optuna RDB + multi-worker
+  cache_enabled: true
+  log_level: "INFO"             # DEBUG | INFO | WARNING | ERROR
+  log_format: "text"            # json | text
+  output_dir: "outputs"
+  model_registry_dir: "models"

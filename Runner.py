@@ -259,12 +259,12 @@ def main():
     
 
     # Example: Your LSTM command
-    command1 = "python zGen1\\RUNforecast.py --data data/SPY.csv"
+    """command1 = "python zGen1\\RUNforecast.py --data data/SPY.csv"
     result1 = runner.run_command(
         command1, 
         extract_patterns={"annualized_volatility": r"Annualized Volatility \(%\)[:\s]+([0-9.]+)"},
         description="zGen1"
-    )
+    )"""
     command2 = ["zGen2\\.venv\\Scripts\\python.exe","zGen2\\main.py","predict","--data", "data\\SPY.csv","--model", "models\\","--output", "forecasts\\"]  
     result2 = runner.run_command(
         command2, 
@@ -277,6 +277,7 @@ def main():
         extract_patterns={"annualized_volatility": r"Annualized Volatility\s*\(%\):\s*([\d\.]+)"},
        description="zGen3lastm"
     )
+    """
     command4 = "python zGen4\\rv_forecast.py --mode forecast --data_path data/"
     result4 = runner.run_command(
         command4, 
@@ -288,7 +289,7 @@ def main():
         command5, 
         extract_patterns={"annualized_volatility": r"Annualized Volatility \(%\)[:\s]+([0-9.]+)"},
        description="zGen3tf"
-    )
+    )"""
     """
     # Example: Another model for comparison
     command2 = "bash command"
