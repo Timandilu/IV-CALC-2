@@ -1,5 +1,5 @@
 artifact_uri: file:C:/Users/Timan/Downloads/StockAI/IV Calculator/IV Calc 2/IV-CALC-2/zGEn5/mlruns/891873453333330888/a4395788c70541578d423af8a1585956/artifacts
-end_time: null
+end_time: 1751060079872
 entry_point_name: ''
 experiment_id: '891873453333330888'
 lifecycle_stage: active
@@ -9,6 +9,6 @@ source_name: ''
 source_type: 4
 source_version: ''
 start_time: 1751053792485
-status: 1
+status: 3
 tags: []
 user_id: Timan

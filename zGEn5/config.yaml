@@ -57,7 +57,7 @@ models:
 # ---------------------------------------------------------------------
 optimization:
   enabled: true
-  n_trials: 50
+  n_trials: 5
   timeout: 7200                # Seconds (2 h)
   pruner: "median"             # Optuna pruner: median | none | ...
   sampler: "tpe"               # tpe | random | ...

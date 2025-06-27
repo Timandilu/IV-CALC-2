@@ -1,0 +1,2 @@
+2025-06-27 23:35:42,950 - __main__ - INFO - Making real-time prediction for SPY
+2025-06-27 23:35:42,950 - __main__ - ERROR - Error in real-time prediction: unsupported persistent id encountered

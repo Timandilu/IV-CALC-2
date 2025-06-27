@@ -14,3 +14,13 @@
 {"timestamp": "2025-06-27T22:08:18.009327", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
 {"timestamp": "2025-06-27T22:09:43.720253", "level": "INFO", "logger": "__main__", "message": "Epoch 0: Train Loss = 0.000743, Val Loss = 0.000028", "module": "main", "function": "_log", "line": 222}
 {"timestamp": "2025-06-27T22:20:47.377862", "level": "INFO", "logger": "__main__", "message": "Epoch 10: Train Loss = 0.000016, Val Loss = 0.000012", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T22:31:43.305501", "level": "INFO", "logger": "__main__", "message": "Epoch 20: Train Loss = 0.000015, Val Loss = 0.000012", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T22:41:36.804053", "level": "INFO", "logger": "__main__", "message": "Epoch 30: Train Loss = 0.000015, Val Loss = 0.000012", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T22:52:58.271325", "level": "INFO", "logger": "__main__", "message": "Epoch 40: Train Loss = 0.000015, Val Loss = 0.000012", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T22:55:19.830497", "level": "INFO", "logger": "__main__", "message": "Early stopping at epoch 42", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T22:55:25.004075", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T22:57:27.037115", "level": "INFO", "logger": "__main__", "message": "Epoch 0: Train Loss = 0.000031, Val Loss = 0.000019", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T23:17:53.708107", "level": "INFO", "logger": "__main__", "message": "Epoch 10: Train Loss = 0.000029, Val Loss = 0.000027", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T23:17:53.708666", "level": "INFO", "logger": "__main__", "message": "Early stopping at epoch 10", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T23:18:01.364349", "level": "INFO", "logger": "__main__", "message": "Training LSTM model", "module": "main", "function": "_log", "line": 222}
+{"timestamp": "2025-06-27T23:19:35.264776", "level": "INFO", "logger": "__main__", "message": "Epoch 0: Train Loss = 0.000039, Val Loss = 0.000012", "module": "main", "function": "_log", "line": 222}
