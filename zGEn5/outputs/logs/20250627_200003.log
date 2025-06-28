@@ -1,4 +1,0 @@
-{"timestamp": "2025-06-27T20:00:03.328748", "level": "INFO", "logger": "__main__", "message": "Starting full volatility forecasting pipeline", "module": "main", "function": "_log", "line": 222}
-{"timestamp": "2025-06-27T20:00:03.329443", "level": "INFO", "logger": "__main__", "message": "Processing symbol: SPY", "module": "main", "function": "_log", "line": 222}
-{"timestamp": "2025-06-27T20:00:03.749866", "level": "ERROR", "logger": "__main__", "message": "Error processing SPY: No data sources available for SPY", "module": "main", "function": "_log", "line": 222}
-{"timestamp": "2025-06-27T20:00:03.750730", "level": "INFO", "logger": "__main__", "message": "Pipeline completed successfully", "module": "main", "function": "_log", "line": 222}

@@ -1,0 +1,6 @@
+2025-06-28 23:51:21,842 - __main__ - INFO - Making real-time prediction for SPY
+2025-06-28 23:51:22,210 - __main__ - INFO - Data validation complete for SPY: 299130 -> 298878 records
+2025-06-28 23:51:22,211 - __main__ - INFO - Engineering features for SPY
+2025-06-28 23:51:22,677 - __main__ - INFO - Feature engineering complete: 61 features, 151067 samples
+2025-06-28 23:51:22,897 - __main__ - INFO - Creating sequences
+2025-06-28 23:51:23,403 - __main__ - ERROR - Error in real-time prediction: iteration over a 0-d array

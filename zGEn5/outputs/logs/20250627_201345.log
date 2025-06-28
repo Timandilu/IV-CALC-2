@@ -1,4 +1,0 @@
-{"timestamp": "2025-06-27T20:13:45.542879", "level": "INFO", "logger": "__main__", "message": "Starting full volatility forecasting pipeline", "module": "main", "function": "_log", "line": 222}
-{"timestamp": "2025-06-27T20:13:45.543656", "level": "INFO", "logger": "__main__", "message": "Processing symbol: SPY", "module": "main", "function": "_log", "line": 222}
-{"timestamp": "2025-06-27T20:13:46.021935", "level": "ERROR", "logger": "__main__", "message": "Error processing SPY: 'function' object has no attribute 'get_data'", "module": "main", "function": "_log", "line": 222}
-{"timestamp": "2025-06-27T20:13:46.022877", "level": "INFO", "logger": "__main__", "message": "Pipeline completed successfully", "module": "main", "function": "_log", "line": 222}

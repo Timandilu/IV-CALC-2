@@ -561,32 +561,64 @@ class FeatureEngineer:
         true_range = ranges.max(axis=1)
         return true_range.rolling(window).mean()
     
-    def create_sequences(self, features: pd.DataFrame, target_col: str = 'target_rv') -> Tuple[np.ndarray, np.ndarray]:
-        """Create sequences for time series prediction"""
-        feature_cols = [col for col in features.columns if col != target_col]
-        self.logger.info(f"Creating sequences")
-        X, y = [], []
-        self.logger.info(f"Total iterations: {len(features) - self.config.sequence_length}")
-        # Vectorized sequence creation for speed
-        feature_arr = features[feature_cols].values
-        target_arr = features[target_col].values
-        seq_len = int(self.config.sequence_length)
-        n_samples = int(len(features)) - seq_len
+    def create_sequences(
+        self,
+        features: pd.DataFrame,
+        target_col: str = "target_rv",
+        forecast_horizon: str = "next",          # "next" → one-step-ahead; "same" → last row in window
+    ) -> Tuple[np.ndarray, np.ndarray]:
+        """
+        Build rolling windows of length `self.config.sequence_length` and align targets.
 
-        if n_samples <= 0:
-            return np.empty((0, seq_len, len(feature_cols))), np.empty((0,))
+        Parameters
+        ----------
+        features : pd.DataFrame
+            DataFrame containing all model inputs plus `target_col`.
+        target_col : str, optional
+            Name of the target column.  Default is "target_rv".
+        forecast_horizon : {"next", "same"}, optional
+            * "next": use each window to predict the immediately following row
+            * "same": predict the target value of the last row inside the window
 
-        # Create rolling window view for features
+        Returns
+        -------
+        X : np.ndarray  shape (n_samples, sequence_length, n_features)
+        y : np.ndarray  shape (n_samples,)
+        """
+        self.logger.info("Creating sequences")
+
+        feature_cols = [c for c in features.columns if c != target_col]
+        feature_arr  = features[feature_cols].values
+        target_arr   = features[target_col].values
+        seq_len      = int(self.config.sequence_length)
+        n_features   = feature_arr.shape[1]
+
+        # Guard against edge case: not enough rows for one window
+        if len(features) <= seq_len:
+            return np.empty((0, seq_len, n_features)), np.empty((0,))
+
+        # --- build rolling windows (vectorised) ---------------------------------
         try:
-            # Use numpy.lib.stride_tricks.sliding_window_view if available (numpy >= 1.20)
-            X = np.lib.stride_tricks.sliding_window_view(feature_arr, (seq_len, feature_arr.shape[1]))[:, 0, :, :]
-            y = target_arr[seq_len:]
+            X = (np.lib.stride_tricks.sliding_window_view(feature_arr, (seq_len, n_features))[:, 0, :, :])
         except AttributeError:
-            # Fallback to slower loop if sliding_window_view is not available
-            X = np.array([feature_arr[i-seq_len:i] for i in range(seq_len, len(features))])
+            # Fallback for NumPy < 1.20
+            X = np.array([feature_arr[i - seq_len : i] for i in range(seq_len, len(features) + 1)])
+
+        # --- align targets -------------------------------------------------------
+        if forecast_horizon == "next":
+            # One-step-ahead: drop last window to match y
+            X = X[:-1]                         # shape → len(features) - seq_len
             y = target_arr[seq_len:]
-    
-        return np.array(X), np.array(y)
+        elif forecast_horizon == "same":
+            y = target_arr[seq_len - 1 :]
+        else:
+            raise ValueError("forecast_horizon must be 'next' or 'same'")
+
+        # --- invariants ----------------------------------------------------------
+        assert len(X) == len(y), f"Length mismatch after alignment: X rows {len(X)}, y rows {len(y)}"
+
+        return X.astype(np.float32), y.astype(np.float32)
+
     
     def fit_scaler(self, features: pd.DataFrame, symbol: str):
         """Fit scaler on features"""
@@ -769,14 +801,14 @@ class LSTMModel(BaseModel, nn.Module):
         self.eval()
         dataset = TimeSeriesDataset(X, np.zeros(len(X)))  # Dummy targets
         loader = DataLoader(dataset, batch_size=self.config.batch_size, shuffle=False)
-        
         predictions = []
         with torch.no_grad():
             for X_batch, _ in loader:
                 X_batch = X_batch.to(self.device)
                 y_pred = self(X_batch)
-                predictions.extend(y_pred.cpu().numpy())
-        
+                #predictions.extend(y_pred.cpu().numpy())
+                predictions.extend(np.atleast_1d(y_pred.cpu().numpy()))
+            
         return np.array(predictions)
     
     def get_hyperparameter_space(self, trial) -> Dict[str, Any]:
@@ -1501,22 +1533,17 @@ class ModelEvaluator:
     def evaluate_model(self, y_true: np.ndarray, y_pred: np.ndarray, model_name: str = "") -> Dict[str, float]:
         """Evaluate model performance"""
         self.logger.info(f"Evaluating model: {model_name}")
-        
         metrics = {}
-        
         # Basic regression metrics
         metrics['rmse'] = np.sqrt(mean_squared_error(y_true, y_pred))
         metrics['mae'] = mean_absolute_error(y_true, y_pred)
         metrics['r2'] = r2_score(y_true, y_pred)
-        
         # Financial metrics
         metrics['mape'] = self._mean_absolute_percentage_error(y_true, y_pred)
         metrics['qlike'] = self._qlike_loss(y_true, y_pred)
         metrics['directional_accuracy'] = self._directional_accuracy(y_true, y_pred)
-        
         # Statistical tests
         metrics['shapiro_pvalue'] = self._shapiro_test(y_true - y_pred)
-        
         return metrics
     
     def _mean_absolute_percentage_error(self, y_true: np.ndarray, y_pred: np.ndarray) -> float:
@@ -1758,6 +1785,7 @@ class VolatilityForecastingPipeline:
         
         # 3. Create sequences
         X, y = self.feature_engineer.create_sequences(scaled_features)
+        assert len(X) == len(y), (f"create_sequences returned {len(X)} X rows and {len(y)} y rows")
         
         # 4. Train-validation-test split
         train_size = int(0.7 * len(X))
@@ -1792,8 +1820,17 @@ class VolatilityForecastingPipeline:
             
             # Evaluate
             y_pred = model.predict(X_test)
-            metrics = self.evaluator.evaluate_model(y_test, y_pred, f"{symbol}_{model_type}")
+            y_pred = model.predict(X_test).squeeze()
+            if len(y_pred) != len(y_test):
+                # common one-step-ahead shift; keep only the overlapping part
+                min_len = min(len(y_pred), len(y_test))
+                y_pred  = y_pred[:min_len]
+                y_test  = y_test[:min_len]
+
+            assert len(y_pred) == len(y_test), (f"After alignment: y_pred {len(y_pred)}, y_test {len(y_test)}")
             
+            metrics = self.evaluator.evaluate_model(y_test, y_pred, f"{symbol}_{model_type}")
+                
             # Create plots
             plot_files = self.evaluator.create_evaluation_plots(
                 y_test, y_pred, f"{symbol}_{model_type}", 
@@ -1909,41 +1946,62 @@ class VolatilityForecastingPipeline:
             # Update config for recent data
             self.config.data.start_date = start_date
             self.config.data.end_date = end_date
-            
+
             # Process data
             raw_data = self.data_manager.get_data(symbol, use_cache=False)
             validated_data = self.data_manager.validate_data(raw_data, symbol)
             features = self.feature_engineer.engineer_features(validated_data, symbol)
+            scaler = self.feature_engineer.fit_scaler(features, symbol)
             scaled_features = self.feature_engineer.transform(features, symbol)
-            
             # Get latest sequence
             X, _ = self.feature_engineer.create_sequences(scaled_features)
             latest_X = X[-1:]  # Last sequence
-            
             # Predict
             prediction = model.predict(latest_X)[0]
-            
+            # Determine the date for which the prediction is made
+            # The predicted RV is for the row immediately after the last window
+            predicted_date = features.index[-1] + pd.Timedelta(days=1)  # adjust if your interval is not 1min
             # Generate explanation
             feature_names = [f"feature_{i}" for i in range(latest_X.shape[-1] if len(latest_X.shape) == 3 else latest_X.shape[1])]
             explanations = self.model_explainer.explain_prediction(model, latest_X, feature_names)
-            
             return {
                 'symbol': symbol,
                 'prediction': prediction,
+                'predicted_date': str(predicted_date),
                 'timestamp': datetime.now().isoformat(),
                 'model_path': model_path,
                 'explanations': explanations,
                 'confidence': self._calculate_prediction_confidence(model, latest_X)
             }
-            
         except Exception as e:
             self.logger.error(f"Error in real-time prediction: {str(e)}")
             return {'error': str(e)}
     
     def _calculate_prediction_confidence(self, model, X: np.ndarray) -> float:
-        """Calculate prediction confidence (simplified)"""
-        # This is a placeholder - implement proper uncertainty quantification
-        return 0.85
+        """
+        Calculate prediction confidence (simple heuristic).
+        For neural nets: use inverse of recent prediction variance.
+        For tree/linear models: use std of predictions from last N windows.
+        Returns a float between 0 and 1 (higher = more confident).
+        """
+        try:
+            # Use last 10 windows if possible
+            if X.shape[0] > 10:
+                X_recent = X[-10:]
+            else:
+                X_recent = X
+
+            preds = model.predict(X_recent)
+            preds = np.array(preds).flatten()
+            # Heuristic: lower std = higher confidence
+            std = np.std(preds)
+            # Map std to confidence: exp decay, clamp to [0, 1]
+            confidence = float(np.exp(-std))
+            confidence = max(0.0, min(1.0, confidence))
+            return confidence
+        except Exception as e:
+            self.logger.warning(f"Could not calculate prediction confidence: {str(e)}")
+            return 0.5  # fallback
 
 # Register it
 VolatilityForecastingPipeline.data_manager_sources_patch = (
@@ -2085,9 +2143,10 @@ def main():
             pipeline = VolatilityForecastingPipeline(config)
             result = pipeline.predict_realtime(args.symbol, args.model_path)
             print(f"Prediction result: {json.dumps(result, indent=2, default=str)}")
-        
+            
         elif args.command == 'evaluate':
             print("Evaluation functionality would be implemented here")
+
         
         elif args.command == 'generate-sample':
             generate_sample_data(args.symbol, args.days, args.output)
@@ -2217,6 +2276,14 @@ if __name__ == '__main__':
 
 
 """
+ _models = {
+        'lstm': LSTMModel,
+        'transformer': TransformerModel,
+        'lightgbm': LightGBMModel,
+        'xgboost': XGBoostModel,
+        'catboost': CatBoostModel,
+        'ridge': RidgeModel,
+    }
 python main.py train --config config.yaml --symbols SPY --models lstm ridge transformer
 python main.py predict --config config.yaml --symbol SPY --model-path models/SPY_lstm_best.pkl
 

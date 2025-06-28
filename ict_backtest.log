@@ -1,0 +1,462 @@
+2025-06-28 19:19:44,159 - INFO - Starting ICT Strategy Backtest
+2025-06-28 19:19:44,159 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4H', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': True, 'plot': True}
+2025-06-28 19:19:44,160 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 19:19:45,008 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 19:19:45,036 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 19:19:45,036 - INFO - Generating trading signals...
+2025-06-28 19:19:45,259 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 19:19:50,282 - INFO - Generated 0 trading signals
+2025-06-28 19:19:50,283 - INFO - Starting backtest execution...
+2025-06-28 19:19:50,283 - WARNING - No signals to backtest
+2025-06-28 19:19:50,283 - WARNING - No results generated from backtest
+2025-06-28 19:19:50,283 - INFO - Backtest completed successfully
+2025-06-28 19:20:17,773 - INFO - Starting ICT Strategy Backtest
+2025-06-28 19:20:17,773 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4H', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': True, 'plot': True}
+2025-06-28 19:20:17,774 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 19:20:18,440 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 19:20:18,462 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 19:20:18,462 - INFO - Generating trading signals...
+2025-06-28 19:20:18,685 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 19:20:49,246 - INFO - Generated 0 trading signals
+2025-06-28 19:20:49,247 - INFO - Starting backtest execution...
+2025-06-28 19:20:49,247 - WARNING - No signals to backtest
+2025-06-28 19:20:49,247 - WARNING - No results generated from backtest
+2025-06-28 19:20:49,247 - INFO - Backtest completed successfully
+2025-06-28 19:21:36,480 - INFO - Starting ICT Strategy Backtest
+2025-06-28 19:21:36,480 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4H', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 19:21:36,481 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 19:21:37,144 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 19:21:37,167 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 19:21:37,167 - INFO - Generating trading signals...
+2025-06-28 19:21:37,394 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 19:22:04,092 - INFO - Generated 364 trading signals
+2025-06-28 19:22:04,093 - INFO - Starting backtest execution...
+2025-06-28 19:22:04,699 - INFO - Backtest completed successfully
+2025-06-28 19:22:19,994 - INFO - Visualizations saved to ./figures/
+2025-06-28 19:22:20,010 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 19:22:20,010 - INFO - Backtest completed successfully
+2025-06-28 20:19:03,792 - INFO - Starting ICT Strategy Backtest
+2025-06-28 20:19:03,792 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4H', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 20:19:03,792 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 20:19:04,444 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 20:19:04,468 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 20:19:04,468 - INFO - Generating trading signals...
+2025-06-28 20:19:04,688 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 20:19:04,704 - ERROR - Error generating signals: cannot access local variable 'bos_idx' where it is not associated with a value
+2025-06-28 20:19:04,704 - ERROR - Fatal error: cannot access local variable 'bos_idx' where it is not associated with a value
+2025-06-28 20:25:25,688 - INFO - Starting ICT Strategy Backtest
+2025-06-28 20:25:25,688 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4H', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': True, 'plot': True}
+2025-06-28 20:25:25,689 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 20:25:26,410 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 20:25:26,434 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 20:25:26,435 - INFO - Generating trading signals...
+2025-06-28 20:25:26,656 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 20:25:31,591 - INFO - Generated 0 trading signals
+2025-06-28 20:25:31,591 - INFO - Starting backtest execution...
+2025-06-28 20:25:31,591 - WARNING - No signals to backtest
+2025-06-28 20:25:31,592 - WARNING - No results generated from backtest
+2025-06-28 20:25:31,592 - INFO - Backtest completed successfully
+2025-06-28 20:25:50,512 - INFO - Starting ICT Strategy Backtest
+2025-06-28 20:25:50,512 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4H', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': True, 'plot': True}
+2025-06-28 20:25:50,513 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 20:25:51,153 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 20:25:51,176 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 20:25:51,176 - INFO - Generating trading signals...
+2025-06-28 20:25:51,399 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 20:26:18,354 - INFO - Generated 0 trading signals
+2025-06-28 20:26:18,354 - INFO - Starting backtest execution...
+2025-06-28 20:26:18,354 - WARNING - No signals to backtest
+2025-06-28 20:26:18,355 - WARNING - No results generated from backtest
+2025-06-28 20:26:18,355 - INFO - Backtest completed successfully
+2025-06-28 20:27:01,153 - INFO - Starting ICT Strategy Backtest
+2025-06-28 20:27:01,153 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4H', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 20:27:01,154 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 20:27:01,792 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 20:27:01,814 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 20:27:01,814 - INFO - Generating trading signals...
+2025-06-28 20:27:02,034 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 20:27:06,843 - INFO - Generated 7 trading signals
+2025-06-28 20:27:06,848 - INFO - Starting backtest execution...
+2025-06-28 20:27:06,870 - INFO - Backtest completed successfully
+2025-06-28 20:27:20,495 - INFO - Visualizations saved to ./figures/
+2025-06-28 20:27:20,501 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 20:27:20,501 - INFO - Backtest completed successfully
+2025-06-28 20:27:34,170 - INFO - Starting ICT Strategy Backtest
+2025-06-28 20:27:34,170 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4H', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 20:27:34,171 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 20:27:34,803 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 20:27:34,825 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 20:27:34,826 - INFO - Generating trading signals...
+2025-06-28 20:27:35,050 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 20:28:01,685 - INFO - Generated 64 trading signals
+2025-06-28 20:28:01,693 - INFO - Starting backtest execution...
+2025-06-28 20:28:01,881 - INFO - Backtest completed successfully
+2025-06-28 20:28:18,668 - INFO - Visualizations saved to ./figures/
+2025-06-28 20:28:18,677 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 20:28:18,677 - INFO - Backtest completed successfully
+2025-06-28 20:39:10,798 - INFO - Starting ICT Strategy Backtest
+2025-06-28 20:39:10,799 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 20:39:10,799 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 20:39:11,444 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 20:39:11,468 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 20:39:11,468 - INFO - Generating trading signals...
+2025-06-28 20:39:11,691 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 20:39:38,502 - INFO - Diagnositcs: Bias: 132720, Liquidity Sweep: 12422, Session max: 130043, BOS: 808, FVG: 64, Fib OTE: 64 
+2025-06-28 20:39:38,504 - INFO - Generated 64 trading signals
+2025-06-28 20:39:38,512 - INFO - Starting backtest execution...
+2025-06-28 20:39:38,706 - INFO - Backtest completed successfully
+2025-06-28 20:40:56,329 - INFO - Visualizations saved to ./figures/
+2025-06-28 20:40:56,336 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 20:40:56,337 - INFO - Backtest completed successfully
+2025-06-28 20:45:20,808 - INFO - Starting ICT Strategy Backtest
+2025-06-28 20:45:20,808 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 25, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 20:45:20,809 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 20:45:21,452 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 20:45:21,474 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 20:45:21,474 - INFO - Generating trading signals...
+2025-06-28 20:45:21,694 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 20:45:47,052 - INFO - Diagnositcs: Bias: 132720, Session max: 130234, Liquidity Sweep: 10779, BOS: 715, FVG: 54, Fib OTE: 54 
+2025-06-28 20:45:47,054 - INFO - Generated 54 trading signals
+2025-06-28 20:45:47,057 - INFO - All signals pass look-ahead validation
+2025-06-28 20:45:47,057 - INFO - Starting backtest execution...
+2025-06-28 20:45:47,218 - INFO - Backtest completed successfully
+2025-06-28 20:45:51,597 - INFO - Visualizations saved to ./figures/
+2025-06-28 20:45:51,603 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 20:45:51,603 - INFO - Backtest completed successfully
+2025-06-28 20:51:34,946 - INFO - Starting ICT Strategy Backtest
+2025-06-28 20:51:34,946 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 20:51:34,946 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 20:51:35,594 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 20:51:35,618 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 20:51:35,618 - INFO - Generating trading signals...
+2025-06-28 20:51:35,839 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 20:52:04,415 - INFO - Diagnositcs: Bias: 132720, Session max: 131858, Liquidity Sweep: 12599, BOS: 843, FVG: 22, Fib OTE: 22 
+2025-06-28 20:52:04,416 - INFO - Generated 22 trading signals
+2025-06-28 20:52:04,418 - INFO - All signals pass look-ahead validation
+2025-06-28 20:52:04,419 - INFO - Starting backtest execution...
+2025-06-28 20:52:04,531 - INFO - Backtest completed successfully
+2025-06-28 20:52:27,305 - INFO - Visualizations saved to ./figures/
+2025-06-28 20:52:27,311 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 20:52:27,311 - INFO - Backtest completed successfully
+2025-06-28 20:54:29,475 - INFO - Starting ICT Strategy Backtest
+2025-06-28 20:54:29,475 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': False}
+2025-06-28 20:54:29,475 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 20:54:30,107 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 20:54:30,129 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 20:54:30,130 - INFO - Generating trading signals...
+2025-06-28 20:54:30,348 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 20:54:30,382 - ERROR - Error generating signals: 557
+2025-06-28 20:54:30,382 - ERROR - Fatal error: 557
+2025-06-28 20:55:28,504 - INFO - Starting ICT Strategy Backtest
+2025-06-28 20:55:28,504 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 20:55:28,505 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 20:55:29,141 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 20:55:29,166 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 20:55:29,166 - INFO - Generating trading signals...
+2025-06-28 20:55:29,385 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 20:55:29,418 - ERROR - Error generating signals: 557
+2025-06-28 20:55:29,419 - ERROR - Fatal error: 557
+2025-06-28 20:56:15,325 - INFO - Starting ICT Strategy Backtest
+2025-06-28 20:56:15,326 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 20:56:15,326 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 20:56:15,958 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 20:56:15,981 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 20:56:15,981 - INFO - Generating trading signals...
+2025-06-28 20:56:16,203 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 20:56:16,238 - ERROR - Error generating signals: 557
+2025-06-28 20:56:16,238 - ERROR - Fatal error: 557
+2025-06-28 20:56:41,657 - INFO - Starting ICT Strategy Backtest
+2025-06-28 20:56:41,657 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 20:56:41,658 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 20:56:42,294 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 20:56:42,316 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 20:56:42,316 - INFO - Generating trading signals...
+2025-06-28 20:56:42,541 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 20:56:42,576 - ERROR - Error generating signals: 557
+2025-06-28 20:56:42,576 - ERROR - Fatal error: 557
+2025-06-28 21:00:26,472 - INFO - Starting ICT Strategy Backtest
+2025-06-28 21:00:26,472 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 21:00:26,473 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 21:00:27,146 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 21:00:27,169 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 21:00:27,169 - INFO - Generating trading signals...
+2025-06-28 21:00:27,388 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 21:00:27,423 - ERROR - Error generating signals: 557
+2025-06-28 21:00:27,423 - ERROR - Fatal error: 557
+2025-06-28 21:02:15,915 - INFO - Starting ICT Strategy Backtest
+2025-06-28 21:02:15,916 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 21:02:15,916 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 21:02:16,554 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 21:02:16,576 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 21:02:16,576 - INFO - Generating trading signals...
+2025-06-28 21:02:16,815 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 21:02:16,848 - ERROR - Error generating signals: 557
+2025-06-28 21:02:16,848 - ERROR - Fatal error: 557
+2025-06-28 21:03:16,108 - INFO - Starting ICT Strategy Backtest
+2025-06-28 21:03:16,109 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 21:03:16,109 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 21:03:16,760 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 21:03:16,783 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 21:03:16,784 - INFO - Generating trading signals...
+2025-06-28 21:03:17,007 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 21:03:59,591 - INFO - Diagnositcs: Bias: 132720, Session max: 131687, Liquidity Sweep: 12592, BOS: 5650, FVG: 37, Fib OTE: 37 
+2025-06-28 21:03:59,592 - INFO - Generated 37 trading signals
+2025-06-28 21:03:59,594 - INFO - All signals pass look-ahead validation
+2025-06-28 21:03:59,595 - INFO - Starting backtest execution...
+2025-06-28 21:03:59,774 - INFO - Backtest completed successfully
+2025-06-28 21:04:05,235 - INFO - Visualizations saved to ./figures/
+2025-06-28 21:04:05,242 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 21:04:05,242 - INFO - Backtest completed successfully
+2025-06-28 21:06:26,297 - INFO - Starting ICT Strategy Backtest
+2025-06-28 21:06:26,297 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 21:06:26,298 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 21:06:26,973 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 21:06:26,996 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 21:06:26,997 - INFO - Generating trading signals...
+2025-06-28 21:06:27,226 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 21:07:18,079 - INFO - Diagnositcs: Bias: 132720, Session max: 122981, Liquidity Sweep: 11612, BOS: 5054, FVG: 203, Fib OTE: 203 
+2025-06-28 21:07:18,081 - INFO - Generated 203 trading signals
+2025-06-28 21:07:18,092 - INFO - All signals pass look-ahead validation
+2025-06-28 21:07:18,092 - INFO - Starting backtest execution...
+2025-06-28 21:07:18,689 - INFO - Backtest completed successfully
+2025-06-28 21:07:25,653 - INFO - Visualizations saved to ./figures/
+2025-06-28 21:07:25,666 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 21:07:25,666 - INFO - Backtest completed successfully
+2025-06-28 21:07:50,626 - INFO - Starting ICT Strategy Backtest
+2025-06-28 21:07:50,626 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 21:07:50,627 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 21:07:51,307 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 21:07:51,331 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 21:07:51,331 - INFO - Generating trading signals...
+2025-06-28 21:07:51,549 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 21:08:32,244 - INFO - Diagnositcs: Bias: 132720, Session max: 113149, Liquidity Sweep: 10585, BOS: 4482, FVG: 307, Fib OTE: 307 
+2025-06-28 21:08:32,247 - INFO - Generated 307 trading signals
+2025-06-28 21:08:32,262 - INFO - All signals pass look-ahead validation
+2025-06-28 21:08:32,263 - INFO - Starting backtest execution...
+2025-06-28 21:08:33,148 - INFO - Backtest completed successfully
+2025-06-28 21:08:41,099 - INFO - Visualizations saved to ./figures/
+2025-06-28 21:08:41,114 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 21:08:41,114 - INFO - Backtest completed successfully
+2025-06-28 21:09:18,350 - INFO - Starting ICT Strategy Backtest
+2025-06-28 21:09:18,351 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 21:09:18,351 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 21:09:18,985 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 21:09:19,008 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 21:09:19,008 - INFO - Generating trading signals...
+2025-06-28 21:09:19,228 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 21:10:04,250 - INFO - Diagnositcs: Bias: 132720, Session max: 131598, Liquidity Sweep: 12587, BOS: 5645, FVG: 47, Fib OTE: 47 
+2025-06-28 21:10:04,251 - INFO - Generated 47 trading signals
+2025-06-28 21:10:04,254 - INFO - All signals pass look-ahead validation
+2025-06-28 21:10:04,255 - INFO - Starting backtest execution...
+2025-06-28 21:10:04,478 - INFO - Backtest completed successfully
+2025-06-28 21:10:15,272 - INFO - Visualizations saved to ./figures/
+2025-06-28 21:10:15,279 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 21:10:15,280 - INFO - Backtest completed successfully
+2025-06-28 21:13:53,765 - INFO - Starting ICT Strategy Backtest
+2025-06-28 21:13:53,765 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 21:13:53,766 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 21:13:54,408 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 21:13:54,431 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 21:13:54,431 - INFO - Generating trading signals...
+2025-06-28 21:13:54,659 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 21:14:41,024 - INFO - Diagnositcs: Bias: 132720, Session max: 132665, Liquidity Sweep: 12687, BOS: 5712, FVG: 14, Fib OTE: 14 
+2025-06-28 21:14:41,025 - INFO - Generated 14 trading signals
+2025-06-28 21:14:41,026 - INFO - All signals pass look-ahead validation
+2025-06-28 21:14:41,027 - INFO - Starting backtest execution...
+2025-06-28 21:14:41,144 - INFO - Backtest completed successfully
+2025-06-28 21:14:47,854 - INFO - Visualizations saved to ./figures/
+2025-06-28 21:14:47,859 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 21:14:47,859 - INFO - Backtest completed successfully
+2025-06-28 21:15:03,358 - INFO - Starting ICT Strategy Backtest
+2025-06-28 21:15:03,358 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 21:15:03,358 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 21:15:03,998 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 21:15:04,021 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 21:15:04,021 - INFO - Generating trading signals...
+2025-06-28 21:15:04,241 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 21:15:49,864 - INFO - Diagnositcs: Bias: 132720, Session max: 132703, Liquidity Sweep: 12699, BOS: 5720, FVG: 4, Fib OTE: 4 
+2025-06-28 21:15:49,865 - INFO - Generated 4 trading signals
+2025-06-28 21:15:49,866 - INFO - All signals pass look-ahead validation
+2025-06-28 21:15:49,867 - INFO - Starting backtest execution...
+2025-06-28 21:15:49,917 - INFO - Backtest completed successfully
+2025-06-28 21:15:59,463 - INFO - Visualizations saved to ./figures/
+2025-06-28 21:15:59,469 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 21:15:59,469 - INFO - Backtest completed successfully
+2025-06-28 21:16:18,252 - INFO - Starting ICT Strategy Backtest
+2025-06-28 21:16:18,252 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 21:16:18,252 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 21:16:18,898 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 21:16:18,921 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 21:16:18,922 - INFO - Generating trading signals...
+2025-06-28 21:16:19,142 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 21:16:52,224 - INFO - Diagnositcs: Bias: 132720, Session max: 91455, Liquidity Sweep: 8654, BOS: 3493, FVG: 610, Fib OTE: 610 
+2025-06-28 21:16:52,228 - INFO - Generated 610 trading signals
+2025-06-28 21:16:52,260 - INFO - All signals pass look-ahead validation
+2025-06-28 21:16:52,261 - INFO - Starting backtest execution...
+2025-06-28 21:16:53,827 - INFO - Backtest completed successfully
+2025-06-28 21:17:00,734 - INFO - Visualizations saved to ./figures/
+2025-06-28 21:17:00,756 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 21:17:00,757 - INFO - Backtest completed successfully
+2025-06-28 21:17:14,791 - INFO - Starting ICT Strategy Backtest
+2025-06-28 21:17:14,791 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 21:17:14,791 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 21:17:15,449 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 21:17:15,473 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 21:17:15,474 - INFO - Generating trading signals...
+2025-06-28 21:17:15,693 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 21:17:45,544 - INFO - Diagnositcs: Bias: 132720, Session max: 80978, Liquidity Sweep: 7719, BOS: 2994, FVG: 737, Fib OTE: 737 
+2025-06-28 21:17:45,549 - INFO - Generated 737 trading signals
+2025-06-28 21:17:45,586 - INFO - All signals pass look-ahead validation
+2025-06-28 21:17:45,587 - INFO - Starting backtest execution...
+2025-06-28 21:17:47,303 - INFO - Backtest completed successfully
+2025-06-28 21:17:53,617 - INFO - Visualizations saved to ./figures/
+2025-06-28 21:17:53,642 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 21:17:53,642 - INFO - Backtest completed successfully
+2025-06-28 21:18:15,554 - INFO - Starting ICT Strategy Backtest
+2025-06-28 21:18:15,555 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 21:18:15,555 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 21:18:16,220 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 21:18:16,245 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 21:18:16,245 - INFO - Generating trading signals...
+2025-06-28 21:18:16,463 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 21:18:50,008 - INFO - Diagnositcs: Bias: 132720, Session max: 96961, Liquidity Sweep: 9207, BOS: 3745, FVG: 588, Fib OTE: 588 
+2025-06-28 21:18:50,012 - INFO - Generated 588 trading signals
+2025-06-28 21:18:50,046 - INFO - All signals pass look-ahead validation
+2025-06-28 21:18:50,047 - INFO - Starting backtest execution...
+2025-06-28 21:18:51,508 - INFO - Backtest completed successfully
+2025-06-28 21:18:59,483 - INFO - Visualizations saved to ./figures/
+2025-06-28 21:18:59,503 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 21:18:59,503 - INFO - Backtest completed successfully
+2025-06-28 21:20:28,754 - INFO - Starting ICT Strategy Backtest
+2025-06-28 21:20:28,754 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': True, 'plot': True}
+2025-06-28 21:20:28,754 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 21:20:29,389 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 21:20:29,412 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 21:20:29,413 - INFO - Generating trading signals...
+2025-06-28 21:20:29,632 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 21:21:13,821 - INFO - Diagnositcs: Bias: 132720, Session max: 131898, Liquidity Sweep: 12609, BOS: 5674, FVG: 1455, Fib OTE: 10 
+2025-06-28 21:21:13,822 - INFO - Generated 10 trading signals
+2025-06-28 21:21:13,823 - INFO - All signals pass look-ahead validation
+2025-06-28 21:21:13,824 - INFO - Starting backtest execution...
+2025-06-28 21:21:13,835 - INFO - Backtest completed successfully
+2025-06-28 21:21:29,410 - INFO - Visualizations saved to ./figures/
+2025-06-28 21:21:29,415 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 21:21:29,416 - INFO - Backtest completed successfully
+2025-06-28 21:22:59,362 - INFO - Starting ICT Strategy Backtest
+2025-06-28 21:22:59,362 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 21:22:59,363 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 21:23:00,100 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 21:23:00,127 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 21:23:00,128 - INFO - Generating trading signals...
+2025-06-28 21:23:00,365 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 21:23:40,272 - INFO - Diagnositcs: Bias: 132720, Session max: 106141, Liquidity Sweep: 10047, BOS: 2801, FVG: 446, Fib OTE: 446 
+2025-06-28 21:23:40,275 - INFO - Generated 446 trading signals
+2025-06-28 21:23:40,298 - INFO - All signals pass look-ahead validation
+2025-06-28 21:23:40,299 - INFO - Starting backtest execution...
+2025-06-28 21:23:41,429 - INFO - Backtest completed successfully
+2025-06-28 21:23:46,294 - INFO - Visualizations saved to ./figures/
+2025-06-28 21:23:46,313 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 21:23:46,313 - INFO - Backtest completed successfully
+2025-06-28 21:25:34,794 - INFO - Starting ICT Strategy Backtest
+2025-06-28 21:25:34,795 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 21:25:34,795 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 21:25:35,459 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 21:25:35,482 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 21:25:35,483 - INFO - Generating trading signals...
+2025-06-28 21:25:35,703 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 21:26:02,702 - INFO - Diagnositcs: Bias: 132720, Session max: 68197, Liquidity Sweep: 6167, BOS: 1184, FVG: 847, Fib OTE: 847 
+2025-06-28 21:26:02,707 - INFO - Generated 847 trading signals
+2025-06-28 21:26:02,753 - INFO - All signals pass look-ahead validation
+2025-06-28 21:26:02,754 - INFO - Starting backtest execution...
+2025-06-28 21:26:04,665 - INFO - Backtest completed successfully
+2025-06-28 21:26:28,504 - INFO - Visualizations saved to ./figures/
+2025-06-28 21:26:28,533 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 21:26:28,534 - INFO - Backtest completed successfully
+2025-06-28 21:28:11,840 - INFO - Starting ICT Strategy Backtest
+2025-06-28 21:28:11,840 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 21:28:11,841 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 21:28:12,503 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 21:28:12,527 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 21:28:12,527 - INFO - Generating trading signals...
+2025-06-28 21:28:12,746 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 21:28:27,928 - INFO - Diagnositcs: Bias: 132720, Session max: 45393, Liquidity Sweep: 4079, BOS: 1272, FVG: 1024, Fib OTE: 1024 
+2025-06-28 21:28:27,935 - INFO - Generated 1024 trading signals
+2025-06-28 21:28:27,988 - INFO - All signals pass look-ahead validation
+2025-06-28 21:28:27,989 - INFO - Starting backtest execution...
+2025-06-28 21:28:29,957 - INFO - Backtest completed successfully
+2025-06-28 21:28:38,317 - INFO - Visualizations saved to ./figures/
+2025-06-28 21:28:38,350 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 21:28:38,351 - INFO - Backtest completed successfully
+2025-06-28 21:35:51,143 - INFO - Starting ICT Strategy Backtest
+2025-06-28 21:35:51,143 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 21:35:51,144 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 21:35:51,879 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 21:35:51,916 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 21:35:51,916 - INFO - Generating trading signals...
+2025-06-28 21:35:52,139 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 21:36:09,239 - INFO - Diagnositcs: Bias: 132720, Session max: 45393, Liquidity Sweep: 4079, BOS: 1272, FVG: 1024, Fib OTE: 1024 
+2025-06-28 21:36:09,245 - INFO - Generated 1024 trading signals
+2025-06-28 21:36:09,303 - INFO - All signals pass look-ahead validation
+2025-06-28 21:36:09,304 - INFO - Starting backtest execution...
+2025-06-28 21:36:09,312 - ERROR - Error during backtest: float division by zero
+2025-06-28 21:36:09,313 - ERROR - Fatal error: float division by zero
+2025-06-28 21:36:25,533 - INFO - Starting ICT Strategy Backtest
+2025-06-28 21:36:25,533 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 21:36:25,534 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 21:36:26,229 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 21:36:26,255 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 21:36:26,255 - INFO - Generating trading signals...
+2025-06-28 21:36:26,475 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 21:36:42,569 - INFO - Diagnositcs: Bias: 132720, Session max: 45393, Liquidity Sweep: 4079, BOS: 1272, FVG: 1024, Fib OTE: 1024 
+2025-06-28 21:36:42,575 - INFO - Generated 1024 trading signals
+2025-06-28 21:36:42,637 - INFO - All signals pass look-ahead validation
+2025-06-28 21:36:42,638 - INFO - Starting backtest execution...
+2025-06-28 21:36:44,905 - INFO - Backtest completed successfully
+2025-06-28 21:37:01,916 - INFO - Visualizations saved to ./figures/
+2025-06-28 21:37:01,950 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 21:37:01,951 - INFO - Backtest completed successfully
+2025-06-28 21:38:06,674 - INFO - Starting ICT Strategy Backtest
+2025-06-28 21:38:06,674 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 21:38:06,675 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 21:38:07,426 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 21:38:07,456 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 21:38:07,457 - INFO - Generating trading signals...
+2025-06-28 21:38:07,716 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 21:38:23,958 - INFO - Diagnositcs: Bias: 132720, Session max: 45393, Liquidity Sweep: 4079, BOS: 1272, FVG: 1024, Fib OTE: 1024 
+2025-06-28 21:38:23,965 - INFO - Generated 1024 trading signals
+2025-06-28 21:38:24,025 - INFO - All signals pass look-ahead validation
+2025-06-28 21:38:24,026 - INFO - Starting backtest execution...
+2025-06-28 21:38:26,185 - INFO - Backtest completed successfully
+2025-06-28 21:38:31,628 - INFO - Visualizations saved to ./figures/
+2025-06-28 21:38:31,663 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 21:38:31,663 - INFO - Backtest completed successfully
+2025-06-28 21:39:10,084 - INFO - Starting ICT Strategy Backtest
+2025-06-28 21:39:10,084 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 21:39:10,084 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 21:39:10,754 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 21:39:10,778 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 21:39:10,778 - INFO - Generating trading signals...
+2025-06-28 21:39:10,997 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 21:39:27,472 - INFO - Diagnositcs: Bias: 132720, Session max: 45393, Liquidity Sweep: 4079, BOS: 1272, FVG: 1024, Fib OTE: 1024 
+2025-06-28 21:39:27,478 - INFO - Generated 1024 trading signals
+2025-06-28 21:39:27,537 - INFO - All signals pass look-ahead validation
+2025-06-28 21:39:27,539 - INFO - Starting backtest execution...
+2025-06-28 21:39:29,621 - INFO - Backtest completed successfully
+2025-06-28 21:39:35,630 - INFO - Visualizations saved to ./figures/
+2025-06-28 21:39:35,664 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 21:39:35,664 - INFO - Backtest completed successfully
+2025-06-28 21:41:58,073 - INFO - Starting ICT Strategy Backtest
+2025-06-28 21:41:58,074 - INFO - Configuration: {'timezone': 'America/New_York', 'initial_capital': 100000, 'risk_per_trade': 0.01, 'commission': 1.0, 'slippage': 0.5, 'htf_frame': '4h', 'lookback': 20, 'max_holding_minutes': 240, 'killzones': ['02:00-05:00', '07:00-10:00'], 'max_trades_per_session': 2, 'reward_risk_ratio': 2.0, 'use_fibonacci_ote': False, 'plot': True}
+2025-06-28 21:41:58,074 - INFO - Loading data from SPY.csv with delimiter ','
+2025-06-28 21:41:58,740 - WARNING - Found duplicate timestamps, removing...
+2025-06-28 21:41:58,764 - INFO - Loaded 299118 rows from 2022-05-31 09:30:00-04:00 to 2025-06-26 15:59:00-04:00
+2025-06-28 21:41:58,764 - INFO - Generating trading signals...
+2025-06-28 21:41:58,985 - INFO - HTF bias calculated: {'neutral': 166388, 'bullish': 79330, 'bearish': 53400}
+2025-06-28 21:42:16,527 - INFO - Diagnositcs: Bias: 132720, Session max: 45393, Liquidity Sweep: 4079, BOS: 1272, FVG: 1024, Fib OTE: 1024 
+2025-06-28 21:42:16,534 - INFO - Generated 1024 trading signals
+2025-06-28 21:42:16,597 - INFO - All signals pass look-ahead validation
+2025-06-28 21:42:16,599 - INFO - Starting backtest execution...
+2025-06-28 21:42:18,974 - INFO - Backtest completed successfully
+2025-06-28 21:42:25,176 - INFO - Visualizations saved to ./figures/
+2025-06-28 21:42:25,209 - INFO - Trades saved to trades_20250628.csv
+2025-06-28 21:42:25,209 - INFO - Backtest completed successfully

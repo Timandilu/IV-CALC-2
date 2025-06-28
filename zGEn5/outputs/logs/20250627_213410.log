@@ -1,8 +1,0 @@
-{"timestamp": "2025-06-27T21:34:10.820699", "level": "INFO", "logger": "__main__", "message": "Starting full volatility forecasting pipeline", "module": "main", "function": "_log", "line": 222}
-{"timestamp": "2025-06-27T21:34:10.821388", "level": "INFO", "logger": "__main__", "message": "Processing symbol: SPY", "module": "main", "function": "_log", "line": 222}
-{"timestamp": "2025-06-27T21:34:11.713011", "level": "INFO", "logger": "__main__", "message": "Data validation complete for SPY: 299130 -> 298878 records", "module": "main", "function": "_log", "line": 222}
-{"timestamp": "2025-06-27T21:34:11.713533", "level": "INFO", "logger": "__main__", "message": "Engineering features for SPY", "module": "main", "function": "_log", "line": 222}
-{"timestamp": "2025-06-27T21:34:12.194400", "level": "INFO", "logger": "__main__", "message": "Feature engineering complete: 61 features, 151067 samples", "module": "main", "function": "_log", "line": 222}
-{"timestamp": "2025-06-27T21:34:12.412888", "level": "INFO", "logger": "__main__", "message": "Creating sequences", "module": "main", "function": "_log", "line": 222}
-{"timestamp": "2025-06-27T21:34:12.413516", "level": "ERROR", "logger": "__main__", "message": "Error processing SPY: StructuredLogger.info() takes 2 positional arguments but 3 were given", "module": "main", "function": "_log", "line": 222}
-{"timestamp": "2025-06-27T21:34:12.429212", "level": "INFO", "logger": "__main__", "message": "Pipeline completed successfully", "module": "main", "function": "_log", "line": 222}

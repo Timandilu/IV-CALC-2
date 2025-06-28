@@ -1,4 +1,0 @@
-{"timestamp": "2025-06-27T20:25:33.473727", "level": "INFO", "logger": "__main__", "message": "Starting full volatility forecasting pipeline", "module": "main", "function": "_log", "line": 222}
-{"timestamp": "2025-06-27T20:25:33.474507", "level": "INFO", "logger": "__main__", "message": "Processing symbol: SPY", "module": "main", "function": "_log", "line": 222}
-{"timestamp": "2025-06-27T20:25:33.870514", "level": "ERROR", "logger": "__main__", "message": "Error processing SPY: [Errno 2] No such file or directory: 'test_sample.csv'", "module": "main", "function": "_log", "line": 222}
-{"timestamp": "2025-06-27T20:25:33.871030", "level": "INFO", "logger": "__main__", "message": "Pipeline completed successfully", "module": "main", "function": "_log", "line": 222}

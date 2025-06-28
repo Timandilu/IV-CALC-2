@@ -1,4 +1,0 @@
-{"timestamp": "2025-06-27T20:26:27.807006", "level": "INFO", "logger": "__main__", "message": "Starting full volatility forecasting pipeline", "module": "main", "function": "_log", "line": 222}
-{"timestamp": "2025-06-27T20:26:27.808697", "level": "INFO", "logger": "__main__", "message": "Processing symbol: SPY", "module": "main", "function": "_log", "line": 222}
-{"timestamp": "2025-06-27T20:26:28.237789", "level": "ERROR", "logger": "__main__", "message": "Error processing SPY: 'timestamp' is not in list", "module": "main", "function": "_log", "line": 222}
-{"timestamp": "2025-06-27T20:26:28.238373", "level": "INFO", "logger": "__main__", "message": "Pipeline completed successfully", "module": "main", "function": "_log", "line": 222}

@@ -1,0 +1,6 @@
+2025-06-29 00:09:18,877 - __main__ - INFO - Making real-time prediction for SPY
+2025-06-29 00:09:19,264 - __main__ - INFO - Data validation complete for SPY: 299130 -> 298878 records
+2025-06-29 00:09:19,264 - __main__ - INFO - Engineering features for SPY
+2025-06-29 00:09:19,722 - __main__ - INFO - Feature engineering complete: 61 features, 151067 samples
+2025-06-29 00:09:19,937 - __main__ - INFO - Creating sequences
+2025-06-29 00:09:20,444 - __main__ - INFO - Generating model explanations
